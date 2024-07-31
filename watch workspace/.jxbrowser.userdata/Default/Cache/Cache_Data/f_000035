@@ -1,0 +1,529 @@
+[
+  {
+    "text": "adcbufcontinuous",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/adcbufcontinuous&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/adcbufcontinuous/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "adcsinglechannel",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/adcsinglechannel&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/adcsinglechannel/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "aesKeyAgreement",
+    "type": "folder",
+    "numChildren": 3,
+    "numChildrenLocal": 3,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/aesKeyAgreement&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/aesKeyAgreement/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "buttonled",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/buttonled&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/buttonled/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "dacoutputbuffer",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/dacoutputbuffer&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/dacoutputbuffer/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "empty",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/empty&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/empty/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "fatsd",
+    "type": "folder",
+    "numChildren": 3,
+    "numChildrenLocal": 3,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/fatsd&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/fatsd/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "fatsdraw",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/fatsdraw&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/fatsdraw/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "gpiointerrupt",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/gpiointerrupt&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/gpiointerrupt/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "gpioshutdown",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/gpioshutdown&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/gpioshutdown/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "i2copt3001_cpp",
+    "type": "folder",
+    "numChildren": 4,
+    "numChildrenLocal": 4,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/i2copt3001_cpp&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/i2copt3001_cpp/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "i2ctmp",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/i2ctmp&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/i2ctmp/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "i2secho",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/i2secho&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/i2secho/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "itmwrite",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/itmwrite&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/itmwrite/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "log",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/log&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/log/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "nvsexternal",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/nvsexternal&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/nvsexternal/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "nvsinternal",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/nvsinternal&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/nvsinternal/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "pwmled2",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/pwmled2&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/pwmled2/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "sdraw",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/sdraw&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/sdraw/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "sha2hash",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/sha2hash&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/sha2hash/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "spicontroller",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/spicontroller&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/spicontroller/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "spiffsexternal",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/spiffsexternal&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/spiffsexternal/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "spiffsinternal",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/spiffsinternal&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/spiffsinternal/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "spiperipheral",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/spiperipheral&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/spiperipheral/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "temperatureNotify",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/temperatureNotify&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/temperatureNotify/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "tfm_aescbc",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/tfm_aescbc&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/tfm_aescbc/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "tfm_empty",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/tfm_empty&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/tfm_empty/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "timerled",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/timerled&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/timerled/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "uart2callback",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 6,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/uart2callback&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/rtos/LP_EM_CC1314R10/drivers/uart2callback/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "uart2echo",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/uart2echo&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/uart2echo/README.html",
+    "packageOrder": 384
+  },
+  {
+    "text": "watchdog",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 9,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools/CC1314R10%20LaunchPad/TI%20Drivers&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad/TI Drivers/watchdog&removeoffline=true",
+    "overviewLink": "C:/ti/simplelink_cc13xx_cc26xx_sdk_7_40_00_77/examples/nortos/LP_EM_CC1314R10/drivers/watchdog/README.html",
+    "packageOrder": 384
+  }
+]

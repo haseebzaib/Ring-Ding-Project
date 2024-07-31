@@ -1,0 +1,8 @@
+
+**** Build of configuration Release for project collector_LP_EM_CC1314R10_tirtos7_ticlang ****
+
+"C:\\ti\\ccs1270\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'collector_LP_EM_CC1314R10_tirtos7_ticlang.out' is up to date.
+
+**** Build Finished ****

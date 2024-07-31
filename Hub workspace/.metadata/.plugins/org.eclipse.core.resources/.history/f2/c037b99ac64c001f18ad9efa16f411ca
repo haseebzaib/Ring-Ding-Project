@@ -1,0 +1,198 @@
+/*
+ * par.c
+ *
+ *  Created on: Jul 28, 2024
+ *      Author: hzaib
+ */
+
+/* RTOS header files */
+
+#include <ti/sysbios/BIOS.h>
+
+#include <pthread.h>
+
+#include <ioc.h>
+
+#include "sys_ctrl.h"
+
+#include "ti_drivers_config.h"
+
+#include <inc/hw_ccfg.h>
+#include <inc/hw_ccfg_simple_struct.h>
+
+/* Header files required for the temporary idle task function */
+#include <ti/drivers/Power.h>
+#include <ti/drivers/power/PowerCC26XX.h>
+#include <ti/drivers/GPIO.h>
+#include <aon_rtc.h>
+#include <prcm.h>
+#include <ti/sysbios/BIOS.h>
+#include <ti/sysbios/knl/Queue.h>
+#include <ti/sysbios/knl/Semaphore.h>
+#include <ti/sysbios/knl/Task.h>
+#include <ti/sysbios/knl/Mailbox.h>
+#include "Defines.h"
+/* Header files required to enable instruction fetch cache */
+#include <ti/drivers/dpl/HwiP.h>
+
+#include "cpu.h"
+#include "collector.h"
+#include <stdio.h>
+#include <string.h>
+#include "smsgs.h"
+#include "api_mac.h"
+#include "control_task.h"
+#include "console.h"
+#include "mac_util.h"
+#include <ti/drivers/NVS.h>
+#include "par.h"
+
+    NVS_Handle nvsHandle;
+    NVS_Attrs regionAttrs;
+    NVS_Params nvsParams;
+
+    void par_erase(save_struct type_to_erase)
+    {
+        switch(type_to_save)
+         {
+         case device_info:
+         {
+
+         }
+
+         case device_pairing:
+         {
+
+             break;
+         }
+
+
+
+         }
+    }
+
+
+
+void par_save(save_struct type_to_save)
+{
+
+    switch(type_to_save)
+    {
+    case device_info:
+    {
+        /* Erase the entire flash sector. */
+        NVS_erase(nvsHandle, 0, regionAttrs.sectorSize);
+
+
+        for(int i=0; i<CONFIG_MAX_DEVICES*2; i++)
+           {
+
+
+              /*This tell us that the stuff stored in struct is valid*/
+              if(control_task_dev_info[i].structValid == 0xBEEF)
+               {
+
+                  NVS_write(nvsHandle, i*control_task_devices_info_len,
+                            (void *)&control_task_dev_info[i],
+                            sizeof(control_task_devices_info),
+                            NVS_WRITE_POST_VERIFY);
+               }
+              else
+              {
+
+                  break; //this shows we have stored all valid structs
+              }
+
+           }
+        break;
+    }
+    case device_pairing:
+    {
+
+        break;
+    }
+
+
+
+    }
+
+}
+
+/*
+ * Load saved parameters from internal flash
+ * our parameters are stored in each sector
+ * total of 16 sectors at start we read from our designated sectors
+ */
+void par_load(save_struct type_to_load)
+{
+
+
+    control_task_devices_info loadinfo ;
+   // control_task_devices_pairing *loadpairing = NULL;
+
+   switch(type_to_load)
+   {
+   case device_info:
+   {
+
+      for(int i=0; i<CONFIG_MAX_DEVICES*2; i++)
+       {
+          NVS_read(nvsHandle, i*control_task_devices_info_len,
+                  (void *)&loadinfo, sizeof(control_task_devices_info));
+
+          if(loadinfo.structValid == 0xBEEF)
+          {
+              memcpy(&control_task_dev_info[i],&loadinfo,sizeof(control_task_devices_info));
+          }
+          else
+          {
+
+              break; //this shows we have stored all valid structs
+          }
+
+       }
+
+       break;
+   }
+   case device_pairing:
+   {
+
+       break;
+   }
+
+
+
+   }
+
+
+
+}
+
+
+
+void par_init()
+{
+    NVS_init();
+    NVS_Params_init(&nvsParams);
+    nvsHandle = NVS_open(CONFIG_NVS_CUSTOM, &nvsParams);
+    NVS_getAttrs(nvsHandle, &regionAttrs);
+
+//    /* Display the NVS region attributes */
+//    cli_printf(cli, "Region Base Address: 0x%x", regionAttrs.regionBase);
+//    cli_printf(cli, "Sector Size: 0x%x", regionAttrs.sectorSize);
+//    cli_printf(cli, "Region Size: 0x%x\n", regionAttrs.regionSize);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+/*
+ * control_task.h
+ *
+ *  Created on: Jul 27, 2024
+ *      Author: hzaib
+ */
+
+#ifndef APPLICATION_CONTROL_TASK_H_
+#define APPLICATION_CONTROL_TASK_H_
+
+#include <ti/sysbios/BIOS.h>
+#include <ti/sysbios/knl/Queue.h>
+#include <ti/sysbios/knl/Semaphore.h>
+#include <ti/sysbios/knl/Task.h>
+#include "ti_154stack_config.h"
+#include "Defines.h"
+
+
+
+
+
+
+
+extern status control_task_mail_post_DevInfo();
+extern status control_task_mail_post_DevJoined(uint16_t shortAdr);
+extern void control_taskInit();
+
+#endif /* APPLICATION_CONTROL_TASK_H_ */

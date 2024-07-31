@@ -1,0 +1,26 @@
+/*
+ * par.h
+ *
+ *  Created on: Jul 28, 2024
+ *      Author: hzaib
+ */
+
+#ifndef APPLICATION_PAR_H_
+#define APPLICATION_PAR_H_
+
+
+
+#define total_size_region 0x8000
+#define total_size_sector 0x800
+#define total_sectors 16
+
+
+
+
+#define control_task_devices_info_len 15
+#define control_task_devices_info_total 100  //we save 100 entries just to be on safe side
+                                             //although max devices that can be configured are 50
+
+
+
+#endif /* APPLICATION_PAR_H_ */

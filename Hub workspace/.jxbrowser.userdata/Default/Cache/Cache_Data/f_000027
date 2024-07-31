@@ -1,0 +1,361 @@
+[
+  {
+    "text": "CC26x2R LaunchPad",
+    "type": "folder",
+    "numChildren": 550,
+    "numChildrenLocal": 550,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC26x2R LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools_1_06_01_01/.metadata/.tirex/img/launchxl-cc2650.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC1354P10-1 LaunchPad",
+    "type": "folder",
+    "numChildren": 609,
+    "numChildrenLocal": 609,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1354P10-1 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/lp-em-cc1354p10-1_p.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC2652R7 LaunchPad",
+    "type": "folder",
+    "numChildren": 552,
+    "numChildrenLocal": 552,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC2652R7 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools_1_06_01_01/.metadata/.tirex/img/launchxl-cc2650.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC1352P1 LaunchPad",
+    "type": "folder",
+    "numChildren": 480,
+    "numChildrenLocal": 480,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1352P1 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/launchxl-cc1350_p.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC1352P7-1 LaunchPad",
+    "type": "folder",
+    "numChildren": 514,
+    "numChildrenLocal": 514,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1352P7-1 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/launchxl-cc1350_p.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC1352P-2 LaunchPad",
+    "type": "folder",
+    "numChildren": 590,
+    "numChildrenLocal": 590,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1352P-2 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/launchxl-cc1350_p.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC2651P3 LaunchPad",
+    "type": "folder",
+    "numChildren": 508,
+    "numChildrenLocal": 508,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC2651P3 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools_1_06_01_01/.metadata/.tirex/img/launchxl-cc2650.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC1352P7-4 LaunchPad",
+    "type": "folder",
+    "numChildren": 601,
+    "numChildrenLocal": 601,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1352P7-4 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/launchxl-cc1350_p.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC2652PSIP LaunchPad",
+    "type": "folder",
+    "numChildren": 527,
+    "numChildrenLocal": 527,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC2652PSIP LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools_1_06_01_01/.metadata/.tirex/img/launchxl-cc2650.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC1352R LaunchPad",
+    "type": "folder",
+    "numChildren": 594,
+    "numChildrenLocal": 594,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1352R LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/launchxl-cc1350_p.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC1354P10-6 LaunchPad",
+    "type": "folder",
+    "numChildren": 603,
+    "numChildrenLocal": 603,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1354P10-6 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC2652RSIP LaunchPad",
+    "type": "folder",
+    "numChildren": 536,
+    "numChildrenLocal": 536,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC2652RSIP LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools_1_06_01_01/.metadata/.tirex/img/launchxl-cc2650.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC1352P-4 LaunchPad",
+    "type": "folder",
+    "numChildren": 590,
+    "numChildrenLocal": 590,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1352P-4 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/launchxl-cc1350_p.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC2652RB LaunchPad",
+    "type": "folder",
+    "numChildren": 414,
+    "numChildrenLocal": 414,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC2652RB LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools_1_06_01_01/.metadata/.tirex/img/launchxl-cc2650.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC2651R3SIPA LaunchPad",
+    "type": "folder",
+    "numChildren": 502,
+    "numChildrenLocal": 502,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC2651R3SIPA LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc26xx_devtools_1_06_01_01/.metadata/.tirex/img/launchxl-cc2650.jpg",
+    "packageOrder": 385
+  },
+  {
+    "text": "CC1314R10 LaunchPad",
+    "type": "folder",
+    "numChildren": 447,
+    "numChildrenLocal": 447,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1314R10 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/lp-em-cc1314r10_p.jpg",
+    "packageOrder": 387
+  },
+  {
+    "text": "CC1312R7 LaunchPad",
+    "type": "folder",
+    "numChildren": 439,
+    "numChildrenLocal": 439,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1312R7 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/launchxl-cc1350_p.jpg",
+    "packageOrder": 387
+  },
+  {
+    "text": "CC1312R LaunchPad",
+    "type": "folder",
+    "numChildren": 402,
+    "numChildrenLocal": 402,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1312R LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/launchxl-cc1312r1_p.jpg",
+    "packageOrder": 387
+  },
+  {
+    "text": "CC1311P3 LaunchPad",
+    "type": "folder",
+    "numChildren": 398,
+    "numChildrenLocal": 398,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1311P3 LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/launchxl-cc1350_p.jpg",
+    "packageOrder": 387
+  },
+  {
+    "text": "CC1312PSIP LaunchPad",
+    "type": "folder",
+    "numChildren": 402,
+    "numChildrenLocal": 402,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77",
+    "url": "/api/resources?path=Wireless%20connectivity/Embedded%20Software/SimpleLink%20CC13xx%20CC26xx%20SDK/Examples/Development%20Tools&package=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15::LPCS-DEVICE-SUPPORT__3.19.00.12",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77",
+    "removeofflineLink": "api/resources?package=LPCS-DEVICE-SUPPORT__3.19.00.12::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_BLE5STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_DMM_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_PROPRF_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI154STACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_TI_SIDEWALK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_WISUNFAN_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK_ZSTACK_MODULE__7.40.00.77::com.ti.SIMPLELINK_CC13XX_CC26XX_SDK__7.40.00.77::sysconfig__1.20.0::xdctools__3.62.01.15&path=Wireless connectivity/Embedded Software/SimpleLink CC13xx CC26xx SDK/Examples/Development Tools/CC1312PSIP LaunchPad&removeoffline=true",
+    "overviewDescription": "",
+    "overviewImage": "tirex-product-tree/cc13xx_devtools_1_08_02_00/.metadata/.tirex/img/launchxl-cc1312r1_p.jpg",
+    "packageOrder": 387
+  }
+]

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;collector_LP_EM_CC1314R10_tirtos7_ticlang&apos;" deleteContents="false" description="Delete resource &apos;collector_LP_EM_CC1314R10_tirtos7_ticlang&apos;" element1="/collector_LP_EM_CC1314R10_tirtos7_ticlang" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1722266437611"/>&#x0A;<refactoring comment="Delete resource &apos;collector_HUB/Release&apos;" deleteContents="false" description="Delete resource &apos;collector_HUB/Release&apos;" element1="/collector_HUB/Release" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1722271099547"/>
+</session>

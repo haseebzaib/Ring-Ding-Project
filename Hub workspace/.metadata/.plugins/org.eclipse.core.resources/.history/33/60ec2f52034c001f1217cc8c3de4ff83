@@ -1,0 +1,268 @@
+/* RTOS header files */
+
+#include <ti/sysbios/BIOS.h>
+
+#include <pthread.h>
+
+#include <ioc.h>
+
+#include "sys_ctrl.h"
+
+#include "ti_drivers_config.h"
+
+#include <inc/hw_ccfg.h>
+#include <inc/hw_ccfg_simple_struct.h>
+#include <ti/drivers/UART2.h>
+/* Header files required for the temporary idle task function */
+#include <ti/drivers/Power.h>
+#include <ti/drivers/power/PowerCC26XX.h>
+#include <ti/drivers/GPIO.h>
+#include <aon_rtc.h>
+#include <prcm.h>
+#include <ti/sysbios/BIOS.h>
+#include <ti/sysbios/knl/Queue.h>
+#include <ti/sysbios/knl/Semaphore.h>
+#include <ti/sysbios/knl/Task.h>
+#include <ti/sysbios/knl/Mailbox.h>
+#include "Defines.h"
+/* Header files required to enable instruction fetch cache */
+#include <ti/drivers/dpl/HwiP.h>
+
+#include "cpu.h"
+#include "collector.h"
+
+#include <string.h>
+
+
+#include "control_task.h"
+#include "console.h"
+#include "embedded_cli.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include "stddef.h"
+#include <ctype.h>
+UART2_Handle uart2Handle;
+ Task_Struct consoleTask;        /* not static so you can see in ROV */
+ Task_Params consoleTaskParam;
+ uint8_t consoleTaskStack[consoleTaskStackSize];
+
+
+/*Function declarations*/
+ static EmbeddedCli *cli;
+static void reverse(char s[]);
+static void itoa(int n, char s[]);
+static void onCommand(EmbeddedCli *embeddedCli, CliCommand *command);
+static void writeChar(EmbeddedCli *embeddedCli, char c);
+static void consoleTask_(uintptr_t arg1, uintptr_t arg2);
+static void initializeEmbeddedCli();
+
+
+
+
+
+
+
+
+
+/*
+ * The following function is from good old K & R.
+ */
+static void reverse(char s[])
+{
+    int i, j;
+    char c;
+
+    for (i = 0, j = strlen(s) - 1; i < j; i++, j--)
+    {
+        c = s[i];
+        s[i] = s[j];
+        s[j] = c;
+    }
+}
+
+/*
+ * The following function is from good old K & R.
+ */
+static void itoa(int n, char s[])
+{
+    int i, sign;
+
+    if ((sign = n) < 0) /* record sign */
+    {
+        n = -n; /* make n positive */
+    }
+    i = 0;
+    do
+    {                          /* generate digits in reverse order */
+        s[i++] = n % 10 + '0'; /* get next digit */
+    } while ((n /= 10) > 0);   /* delete it */
+    if (sign < 0)
+    {
+        s[i++] = '-';
+    }
+    s[i] = '\0';
+    reverse(s);
+}
+
+static void onCommand(EmbeddedCli *embeddedCli, CliCommand *command)
+{
+    embeddedCliTokenizeArgs(command->args);
+    for (int i = 1; i <= embeddedCliGetTokenCount(command->args); ++i)
+    {
+        const char *token = embeddedCliGetToken(command->args, i);
+        size_t tokenSize = strlen(token);
+        UART2_write(uart2Handle, (const void *)token, tokenSize, NULL);
+    }
+}
+
+static void writeChar(EmbeddedCli *embeddedCli, char c)
+{
+    UART2_write(uart2Handle, (const void *)&c, sizeof(char), NULL);
+}
+
+
+
+/**
+ * Initializes the Embedded CLI instance and sets up command bindings.
+ */
+static void initializeEmbeddedCli()
+{
+    cli = embeddedCliNewDefault();
+
+    CliCommandBinding binding1 = { .name = "clear", .help =
+                "Clears the console", .tokenizeArgs = true, .context = NULL,
+                .binding = onClearCLI };
+
+    CliCommandBinding binding2 = {
+           .name = "form-nwk",
+           .help = "Form the SUB 1Ghz Network",
+           .tokenizeArgs = false,
+           .context = NULL,
+           .binding = onFormNWK};
+
+       CliCommandBinding binding3 = {
+           .name = "open-nwk",
+           .help = "Open the SUB 1Ghz Network",
+           .tokenizeArgs = false,
+           .context = NULL,
+           .binding = onOpenNWK};
+
+       CliCommandBinding binding4 = {
+           .name = "close-nwk",
+           .help = "Close the SUB 1Ghz Network",
+           .tokenizeArgs = false,
+           .context = NULL,
+           .binding = onCloseNWK};
+
+    embeddedCliAddBinding(cli, binding1);
+    embeddedCliAddBinding(cli, binding2);
+    embeddedCliAddBinding(cli, binding3);
+    embeddedCliAddBinding(cli, binding4);
+
+
+
+
+    cli->onCommand = onCommand;
+    cli->writeChar = writeChar;
+}
+
+
+
+static void consoleTask_(uintptr_t arg1, uintptr_t arg2)
+{
+    const char consoleDisplay[] = "HUB Starting .... \r\n";
+    /*
+      *  Initialize the UART parameters outside the loop. Let's keep
+      *  most of the defaults (e.g. baudrate = 115200) and only change the
+      *  following.
+      */
+    UART2_Params uartParams;
+    UART2_Params_init(&uartParams);
+    uartParams.readReturnMode = UART2_ReadReturnMode_FULL;
+    /* Create a UART for the console */
+         uart2Handle = UART2_open(CONFIG_DISPLAY_UART, &uartParams);
+         if (uart2Handle == NULL)
+         {
+             while (1)
+             {
+             }
+         }
+
+         UART2_write(uart2Handle, consoleDisplay, sizeof(consoleDisplay) - 1, NULL);
+
+         initializeEmbeddedCli();
+
+         uint8_t receivedChar;
+     while(1)
+    {
+         while (1)
+         {
+
+           if (UART2_readTimeout(uart2Handle, &receivedChar, 1, NULL, 1000) == UART2_STATUS_SUCCESS)
+            {
+                           embeddedCliReceiveChar(cli, receivedChar);
+                           if (receivedChar == '\x0d')
+                           {
+                               break;
+                           }
+            }
+                       else
+                       {
+                           break;
+                       }
+         }
+
+
+         embeddedCliProcess(cli);
+
+         Task_sleep(CLOCK_MS(200));
+    }
+         UART2_close(uart2Handle);
+}
+
+
+
+
+
+/*Global functions*/
+
+// Function to encapsulate the 'embeddedCliPrint()' call with print formatting arguments (act like printf(), but keeps cursor at correct location).
+// The 'embeddedCliPrint()' function does already add a linebreak ('\r\n') to the end of the print statement, so no need to add it yourself.
+void cli_printf(EmbeddedCli *cli, const char *format, ...) {
+    // Create a buffer to store the formatted string
+    char buffer[500];
+
+    // Format the string using snprintf
+    va_list args;
+    va_start(args, format);
+    int length = vsnprintf(buffer, sizeof(buffer), format, args);
+    va_end(args);
+
+    // Check if string fitted in buffer else print error to stderr
+    if (length < 0) {
+        fprintf(stderr, "Error formatting the string\r\n");
+        return;
+    }
+
+    // Call embeddedCliPrint with the formatted string
+    embeddedCliPrint(cli, buffer);
+}
+
+void console_taskInit()
+{
+
+    Task_Params_init(&consoleTaskParam);
+    consoleTaskParam.stack = consoleTaskStack;
+    consoleTaskParam.stackSize = consoleTaskStackSize;
+    consoleTaskParam.priority = consoleTaskPriority;
+    Task_construct(&consoleTask, consoleTask_, &consoleTaskParam, NULL);
+
+
+}
+
+
+
+
+
+

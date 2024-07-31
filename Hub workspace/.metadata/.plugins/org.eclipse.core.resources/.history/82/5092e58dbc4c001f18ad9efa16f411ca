@@ -1,0 +1,20 @@
+/*
+ * par.h
+ *
+ *  Created on: Jul 28, 2024
+ *      Author: hzaib
+ */
+
+#ifndef APPLICATION_PAR_H_
+#define APPLICATION_PAR_H_
+
+
+
+#define total_size_sector 32768
+
+
+#define control_task_devices_info_len 15
+#define control_task_devices_info_total 100
+
+
+#endif /* APPLICATION_PAR_H_ */

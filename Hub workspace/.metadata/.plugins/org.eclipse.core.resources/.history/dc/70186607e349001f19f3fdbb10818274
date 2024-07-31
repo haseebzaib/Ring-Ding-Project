@@ -1,0 +1,25 @@
+/*
+ * Defines.h
+ *
+ *  Created on: Jul 24, 2024
+ *      Author: hzaib
+ */
+
+#ifndef APPLICATION_DEFINES_H_
+#define APPLICATION_DEFINES_H_
+
+#include <ti/sysbios/BIOS.h>
+#include <ti/sysbios/knl/Queue.h>
+#include <ti/sysbios/knl/Semaphore.h>
+#include <ti/sysbios/knl/Task.h>
+
+
+/*Collector Task Parameters*/
+
+extern Task_Struct macAppTask;        /* not static so you can see in ROV */
+#define collectorTaskStackSize  1000
+extern uint8_t collectorTaskStack[collectorTaskStackSize];
+#define collectorTaskPriority  1
+
+
+#endif /* APPLICATION_DEFINES_H_ */

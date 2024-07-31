@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;collector_HUB/application/bindings&apos; to &apos;bindings.c&apos;" description="Rename resource &apos;bindings&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="application/bindings" name="bindings.c" stamp="1721930784975" updateReferences="true"/>
+</session>
