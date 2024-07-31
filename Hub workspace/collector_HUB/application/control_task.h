@@ -68,6 +68,20 @@ extern control_task_joinedDev_mail joinedDev_mail;
 extern control_task_devices_info DevInfomail;
 
 
+
+TYPEDEF_STRUCT_PACKED {
+    /*These two parameters are important as they are for identification of device*/
+    uint16_t dev_shortAddr;  /*device short address to send messages on*/
+    uint64_t dev_signature;  /*unique signature of CC1314*/
+
+    button_codes Noti_Code; /*This will tell hub what the noti is for*/
+
+
+
+}control_task_CallButtonNotification_Info;
+
+
+extern status control_Task_Noti_Info_mail(ApiMac_mcpsDataInd_t *pDataInd);
 extern status control_task_mail_post_DevInfo(ApiMac_mcpsDataInd_t *pDataInd);
 extern status control_task_mail_post_DevJoined(uint16_t shortAdr);
 extern void control_taskInit();

@@ -25,10 +25,10 @@ extern "C"
 #define CONFIG_PAN_ID                   0xFFFF
 
 /* Setting for phy ID */
-#define CONFIG_PHY_ID                   APIMAC_50KBPS_915MHZ_PHY_1
+#define CONFIG_PHY_ID                   APIMAC_200KBPS_915MHZ_PHY_132
 
 /* Setting for channel page */
-#define CONFIG_CHANNEL_PAGE             APIMAC_CHANNEL_PAGE_9
+#define CONFIG_CHANNEL_PAGE             APIMAC_CHANNEL_PAGE_10
 
 
  /* Setting for symbol duration */
@@ -63,8 +63,8 @@ extern "C"
  It is represented as a bit string with LSB representing Ch0.
  e.g., 0x01 0x10 represents Ch0 and Ch12 are included.
  */
-#define CONFIG_FH_CHANNEL_MASK          { 0xFF,0xFF,0x00,0x00,0x00,0x00, \
-                                          0x00,0x00,0x00,0x00,0x00,0x00, \
+#define CONFIG_FH_CHANNEL_MASK          { 0xFF,0xFF,0xFF,0xFF,0xFF,0xFF, \
+                                          0xFF,0xFF,0x00,0x00,0x00,0x00, \
                                           0x00,0x00,0x00,0x00,0x00 }
 
 /*
@@ -76,8 +76,8 @@ extern "C"
  PHY Config will be excluded by stack. To avoid interference on a channel,
  it should be removed from Async Mask and excluded from the FH channel mask.
  */
-#define FH_ASYNC_CHANNEL_MASK           { 0xFF,0xFF,0x00,0x00,0x00,0x00, \
-                                          0x00,0x00,0x00,0x00,0x00,0x00, \
+#define FH_ASYNC_CHANNEL_MASK           { 0xFF,0xFF,0xFF,0xFF,0xFF,0xFF, \
+                                          0xFF,0xFF,0x00,0x00,0x00,0x00, \
                                           0x00,0x00,0x00,0x00,0x00 }
 
 /*
@@ -85,8 +85,8 @@ Channel mask composed of all supported channels for selected PHY. Used to
 validate user input during runtime channel mask configuration.
 */
 #define CUI_VALID_CHANNEL_MASK          { 0xFF,0xFF,0xFF,0xFF,0xFF,0xFF, \
-                                          0xFF,0xFF,0xFF,0xFF,0xFF,0xFF, \
-                                          0xFF,0xFF,0xFF,0xFF,0x01 }
+                                          0xFF,0xFF,0x00,0x00,0x00,0x00, \
+                                          0x00,0x00,0x00,0x00,0x00 }
 
 /* Setting for FH network name attribute */
 #define CONFIG_FH_NETNAME               {"FHTest"}

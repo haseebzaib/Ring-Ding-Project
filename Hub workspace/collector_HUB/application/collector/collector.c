@@ -1712,9 +1712,18 @@ static void dataIndCB(ApiMac_mcpsDataInd_t *pDataInd)
 #endif /* DEVICE_TYPE_MSG */
             case Smsgs_cmdIds_SensorDeviceInfo:
                  {
+
+
                      control_task_mail_post_DevInfo(pDataInd);
                      break;
                  }
+
+            case Smsgs_cmdIds_SensorNotiInfo:
+            {
+
+                control_Task_Noti_Info_mail(pDataInd);
+                   break;
+            }
 
 
             default:

@@ -42,31 +42,31 @@ extern RF_TxPowerTable_Entry txPowerTable_868_pa13[]; // 868 MHz, 13 dBm
 
 
 //*********************************************************************************
-//  RF Setting:   IEEE 802.15.4, 50 kbps, 25 kHz Deviation, 2-GFSK, 100 kHz RX Bandwidth
+//  RF Setting:   200 kbps, 50 kHz Deviation, 2-GFSK, 311 kHz RX Bandwidth
 //
-//  PHY:          2gfsk50kbps154g
-//  Setting file: setting_tc106_154g.json
+//  PHY:          2gfsk200kbps154g
+//  Setting file: setting_tc146_154g.json
 //*********************************************************************************
 
 // Custom override offsets
 #define TI_154_STACK_OVERRIDES_OFFSET 9
 
 // PA table usage
-#define TX_POWER_TABLE_SIZE_2gfsk50kbps154g TXPOWERTABLE_868_PA13_SIZE
+#define TX_POWER_TABLE_SIZE_2gfsk200kbps154g TXPOWERTABLE_868_PA13_SIZE
 
-#define txPowerTable_2gfsk50kbps154g txPowerTable_868_pa13
+#define txPowerTable_2gfsk200kbps154g txPowerTable_868_pa13
 
 // TI-RTOS RF Mode object
-extern RF_Mode RF_prop_2gfsk50kbps154g;
+extern RF_Mode RF_prop_2gfsk200kbps154g;
 
 // RF Core API commands
-extern const rfc_CMD_PROP_RADIO_DIV_SETUP_t RF_cmdPropRadioDivSetup_2gfsk50kbps154g;
-extern const rfc_CMD_FS_t RF_cmdFs_2gfsk50kbps154g;
-extern const rfc_CMD_PROP_TX_ADV_t RF_cmdPropTxAdv_2gfsk50kbps154g;
-extern const rfc_CMD_PROP_RX_ADV_t RF_cmdPropRxAdv_2gfsk50kbps154g;
-extern const rfc_CMD_PROP_CS_t RF_cmdPropCs_2gfsk50kbps154g;
+extern const rfc_CMD_PROP_RADIO_DIV_SETUP_t RF_cmdPropRadioDivSetup_2gfsk200kbps154g;
+extern const rfc_CMD_FS_t RF_cmdFs_2gfsk200kbps154g;
+extern const rfc_CMD_PROP_TX_ADV_t RF_cmdPropTxAdv_2gfsk200kbps154g;
+extern const rfc_CMD_PROP_RX_ADV_t RF_cmdPropRxAdv_2gfsk200kbps154g;
+extern const rfc_CMD_PROP_CS_t RF_cmdPropCs_2gfsk200kbps154g;
 
 // RF Core API overrides
-extern uint32_t pOverrides_2gfsk50kbps154g[];
+extern uint32_t pOverrides_2gfsk200kbps154g[];
 
 #endif // _TI_RADIO_CONFIG_H_

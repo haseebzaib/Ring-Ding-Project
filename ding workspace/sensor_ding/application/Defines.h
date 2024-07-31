@@ -28,6 +28,7 @@ extern  uint8_t devInfoConfirmationFlag;
 extern  uint8_t devInfoConfirmationMail;
 
 
+
 typedef enum{
 
     OK = 0,
@@ -60,6 +61,10 @@ extern Mailbox_Handle control_task_InfoToHub_handle;
 
 extern Mailbox_Params control_task_ledConfirm_params;
 extern Mailbox_Handle control_task_ledConfirm_handle;
+
+
+extern Mailbox_Params control_task_NotiInfo_params;
+extern Mailbox_Handle control_task_NotiInfo_handle;
 
 
 extern ApiMac_sAddr_t collectorAddr_app ;

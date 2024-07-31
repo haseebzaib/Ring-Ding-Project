@@ -131,11 +131,10 @@ ti154stack.lockProject                        = true;
 ti154stack.transmitPower                      = "5";
 ti154stack.pollingInterval                    = 500;
 ti154stack.reportingInterval                  = 10000;
-ti154stack.fhChannels                         = ["0","1","10","11","12","13","14","15","2","3","4","5","6","7","8","9"];
-ti154stack.fhAsyncChannels                    = ["0","1","10","11","12","13","14","15","2","3","4","5","6","7","8","9"];
-ti154stack.radioConfig.codeExportConfig.$name = "ti_devices_radioconfig_code_export_param0";
+ti154stack.phyType                            = "phy200kbps";
 ti154stack.aesccmModule.$name                 = "CONFIG_AESCCM_0";
 ti154stack.ti154stackModule.$name             = "ti_ti154stack_ti154stack_config_mod0";
+ti154stack.radioConfig.codeExportConfig.$name = "ti_devices_radioconfig_code_export_param0";
 
 /**
  * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future

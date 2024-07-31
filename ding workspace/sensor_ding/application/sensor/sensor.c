@@ -1481,6 +1481,16 @@ static void dataIndCB(ApiMac_mcpsDataInd_t *pDataInd)
                 break;
             }
 
+            case Smsgs_cmdIds_SensorNotiConfirmation:
+            {
+                uint8_t *p = pDataInd->msdu.p;
+
+                uint8_t id = (uint8_t)*p++;
+                Button_.BT_code = (button_codes)*p;
+                control_Task_led_confirmation_mail(led_noti_confirmation,Button_.BT_code);
+                break;
+            }
+
             default:
                 /* Should not receive other messages */
                 break;

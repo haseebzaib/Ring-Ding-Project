@@ -258,6 +258,8 @@ The <b>Sensor Ramp Data Message</b> is defined as:
     Smsgs_cmdIds_SensorSendDeviceInfoConfirmation = 18,
     Smsgs_cmdIds_SensorDeviceInfo = 19, //sensors device info is yhere
     Smsgs_cmdIds_SensorSetTime = 20,
+    Smsgs_cmdIds_SensorNotiInfo = 21,
+    Smsgs_cmdIds_SensorNotiConfirmation = 22,
 
  } Smsgs_cmdIds_t;
 

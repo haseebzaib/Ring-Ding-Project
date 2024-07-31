@@ -112,7 +112,8 @@ if(!Button_.buttonTimeoutEnable[iCode] && iCode != cNONE)
 {
 
     Button_.BT_code = iCode;
-    control_Task_led_confirmation_mail(led_noti_confirmation,Button_.BT_code);
+    //control_Task_led_confirmation_mail(led_noti_confirmation,Button_.BT_code);
+    control_Task_Noti_Info_mail(Button_.BT_code);
     Button_.buttonTimeoutCount[iCode] = 0;
     Button_.buttonTimeoutEnable[iCode] = 1;
 }

@@ -52,10 +52,13 @@ TYPEDEF_STRUCT_PACKED {
     button_codes Noti_Code; /*This will tell hub what the noti is for*/
 
 
+
 }control_task_CallButtonNotification_Info;
 
 
 
+
+extern status control_Task_Noti_Info_mail(button_codes btn_code);
 extern status control_Task_led_confirmation_mail(led_confirmation ledinfo,button_codes btn_code);
 extern status control_task_mail_post_InfoToHub(uint8_t sendInfo);
 extern void control_taskInit();

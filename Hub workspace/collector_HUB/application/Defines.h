@@ -65,6 +65,10 @@ extern Mailbox_Params control_task_DevInfo_mail_params;
 extern Mailbox_Handle control_task_DevInfo_mail_handle;
 
 
+extern Mailbox_Params control_task_NotiInfo_params;
+extern Mailbox_Handle control_task_NotiInfo_handle;
+
+
 /*Console Task*/
 extern Task_Struct consoleTask;        /* not static so you can see in ROV */
 extern Task_Params consoleTaskParam;

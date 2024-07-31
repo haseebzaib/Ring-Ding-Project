@@ -58,7 +58,12 @@ Mailbox_Handle control_task_InfoToHub_handle = NULL;
 Mailbox_Params control_task_ledConfirm_params;
 Mailbox_Handle control_task_ledConfirm_handle = NULL;
 
+Mailbox_Params control_task_NotiInfo_params;
+Mailbox_Handle control_task_NotiInfo_handle= NULL;
+
 uint16_t personal_addr = 0xFFFF;
+
+control_task_CallButtonNotification_Info sendNoti_To_Hub;
 
 typedef union
 {
@@ -86,16 +91,62 @@ uint8_t devInfoConfirmationMail = 0;
 /*static variables*/
 static control_task_InfoToHub_mail InfoToHub_mail;
 static control_task_led_confirmation LedConfirm_mail;
+static control_task_CallButtonNotification_Info NotiInfo_mail;
 static uint16_t Num_MsgInfoToHubMail = 0;
 static uint16_t Num_MsgLedConfirmMail = 0;
+static uint16_t Num_MsgNotiInfoMail = 0;
 
 /*Function prototypes*/
+static void check_NotiInfoMail();
 static void check_devInfoMail();
 static void check_ledConfirmMail();
 static void set_normalColor();
 static void controlTask_(uintptr_t arg1, uintptr_t arg2);
 
+static void check_NotiInfoMail()
+{
+    Num_MsgNotiInfoMail = Mailbox_getNumPendingMsgs(
+            control_task_NotiInfo_handle);
 
+    if (Num_MsgNotiInfoMail > 0)
+    {
+
+        bool success = Mailbox_pend(control_task_NotiInfo_handle,
+                                    &NotiInfo_mail, BIOS_WAIT_FOREVER);
+        if (success)
+        {
+
+                uint8_t cmdbyte[12];
+
+                /*cmdId*/
+                cmdbyte[0] = Smsgs_cmdIds_SensorNotiInfo;
+                /*dev_short Addr*/
+                conv.L = NotiInfo_mail.dev_shortAddr;
+                cmdbyte[1] = conv.B[0]; //lsb
+                cmdbyte[2] = conv.B[1]; //msb
+                /*dev_signature*/
+                cmdbyte[3] = macAddrLsb.B[0];
+                cmdbyte[4] = macAddrLsb.B[1];
+                cmdbyte[5] = macAddrLsb.B[2];
+                cmdbyte[6] = macAddrLsb.B[3];
+                cmdbyte[7] = macAddrMsb.B[0];
+                cmdbyte[8] = macAddrMsb.B[1];
+                cmdbyte[9] = macAddrMsb.B[2];
+                cmdbyte[10] = macAddrMsb.B[3];
+                /*Notification Code*/
+                cmdbyte[11] = NotiInfo_mail.Noti_Code;
+
+                Task_sleep(CLOCK_MS(300));
+                Sensor_sendMsg(Smsgs_cmdIds_SensorNotiInfo,
+                               &collectorAddr_app, true, 16, cmdbyte);
+
+        }
+
+    }
+
+
+
+}
 
 
 static void check_devInfoMail()
@@ -238,6 +289,7 @@ static void controlTask_(uintptr_t arg1, uintptr_t arg2)
 
 
         check_devInfoMail();
+        check_NotiInfoMail();
         check_ledConfirmMail();
         set_normalColor();
 
@@ -249,6 +301,34 @@ static void controlTask_(uintptr_t arg1, uintptr_t arg2)
 }
 
 /*Global Functions*/
+
+status control_Task_Noti_Info_mail(button_codes btn_code)
+{
+
+
+    control_task_CallButtonNotification_Info mail;
+
+    status status_ = OK;
+
+    mail.Noti_Code = btn_code;
+    mail.dev_shortAddr = control_Task_dev_info.dev_shortAddr;
+    mail.dev_signature =  ((uint64_t)(macAddrMsb.L) << 32) | (uint64_t)(macAddrLsb.L);
+
+
+    if (control_task_NotiInfo_handle)
+    {
+        if (!Mailbox_post(control_task_NotiInfo_handle, &mail, CLOCK_MS(100)))
+        {
+            status_ = ERROR;
+        }
+    }
+    else
+    {
+        status_ = ERROR;
+    }
+
+    return status_;
+}
 
 status control_Task_led_confirmation_mail(led_confirmation ledinfo,button_codes btn_code)
 {
@@ -319,6 +399,12 @@ void control_taskInit()
     control_task_ledConfirm_handle = Mailbox_create(
             sizeof(control_task_led_confirmation), 2,
             &control_task_ledConfirm_params, NULL);
+
+
+    Mailbox_Params_init(&control_task_NotiInfo_params);
+    control_task_NotiInfo_handle = Mailbox_create(
+            sizeof(control_task_CallButtonNotification_Info), 10,
+            &control_task_NotiInfo_params, NULL);
 
     Task_Params_init(&controlTaskParam);
     controlTaskParam.stack = controlTaskStack;
