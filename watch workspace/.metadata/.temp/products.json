@@ -2,8 +2,8 @@
   {
     "name": "simplelink_cc13xx_cc26xx_sdk",
     "displayName": "SimpleLink Low Power F2 SDK",
-    "version": "7.40.00.77",
-    "path": "C:\\ti\\simplelink_cc13xx_cc26xx_sdk_7_40_00_77\\.metadata\\product.json",
+    "version": "7.41.00.17",
+    "path": "C:\\ti\\simplelink_cc13xx_cc26xx_sdk_7_41_00_17\\.metadata\\product.json",
     "rtos": [
       "freertos",
       "none",

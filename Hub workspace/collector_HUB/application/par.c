@@ -46,6 +46,8 @@
 #include "mac_util.h"
 #include <ti/drivers/NVS.h>
 #include "par.h"
+#include <semaphore.h>
+sem_t FlashSem;
 
     NVS_Handle nvsHandle;
     NVS_Attrs regionAttrs;
@@ -53,6 +55,7 @@
 
     void par_erase(save_struct type_to_erase)
     {
+        sem_wait(&FlashSem);
         switch(type_to_erase)
          {
          case device_info:
@@ -74,12 +77,16 @@
 
 
          }
+
+        sem_post(&FlashSem);
     }
 
 
 
 void par_save(save_struct type_to_save)
 {
+
+    sem_wait(&FlashSem);
 uint16_t idx = 0;
     switch(type_to_save)
     {
@@ -120,12 +127,37 @@ uint16_t idx = 0;
     case device_pairing:
     {
 
+        NVS_erase(nvsHandle, 0x800, regionAttrs.sectorSize);
+        NVS_erase(nvsHandle, 0x800*2, regionAttrs.sectorSize);
+
+        for(int i=0; i<CONFIG_MAX_DEVICES*2; i++)
+           {
+
+
+              /*This tell us that the stuff stored in struct is valid*/
+              if(control_task_devPairing[i].structValid == 0xBEEF)
+               {
+
+                  NVS_write(nvsHandle, idx*control_task_devices_pairing_len + 0x800,
+                            (void *)&control_task_devPairing[i],
+                            sizeof(control_task_devices_pairing),
+                            NVS_WRITE_POST_VERIFY);
+
+                  idx++;
+               }
+
+           }
+
+
         break;
     }
 
 
 
     }
+
+    sem_post(&FlashSem);
+
 
 }
 
@@ -137,10 +169,11 @@ uint16_t idx = 0;
 void par_load(save_struct type_to_load)
 {
 
+    sem_wait(&FlashSem);
 
     control_task_devices_info loadinfo ;
    // control_task_devices_pairing *loadpairing = NULL;
-
+    control_task_devices_pairing loadpairing;
    switch(type_to_load)
    {
    case device_info:
@@ -168,12 +201,31 @@ void par_load(save_struct type_to_load)
    case device_pairing:
    {
 
+       for(int i=0; i<CONFIG_MAX_DEVICES*2; i++)
+        {
+           NVS_read(nvsHandle, i*control_task_devices_pairing_len + 0x800,
+                   (void *)&loadpairing, sizeof(control_task_devices_pairing));
+
+           if(loadpairing.structValid == 0xBEEF)
+           {
+               memcpy(&control_task_devPairing[i],&loadpairing,sizeof(control_task_devices_pairing));
+           }
+ //          else
+ //          {
+ //
+ //              break; //this shows we have stored all valid structs
+ //          }
+
+        }
+
        break;
    }
 
 
 
    }
+
+   sem_post(&FlashSem);
 
 
 
@@ -188,9 +240,9 @@ void par_init()
     nvsHandle = NVS_open(CONFIG_NVS_CUSTOM, &nvsParams);
     NVS_getAttrs(nvsHandle, &regionAttrs);
 
+    sem_init(&FlashSem, 0, 0);
 
-
-
+    sem_post(&FlashSem);
 }
 
 

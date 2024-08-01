@@ -28,6 +28,8 @@
                                              //although max devices that can be configured are 50
 
 
+#define control_task_devices_pairing_len 36  //length of a structure which we want to save
+
 
 typedef enum
 {

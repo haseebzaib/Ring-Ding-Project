@@ -138,7 +138,7 @@ static void check_NotiInfoMail()
 
                 Task_sleep(CLOCK_MS(300));
                 Sensor_sendMsg(Smsgs_cmdIds_SensorNotiInfo,
-                               &collectorAddr_app, true, 16, cmdbyte);
+                               &collectorAddr_app, true, 12, cmdbyte);
 
         }
 

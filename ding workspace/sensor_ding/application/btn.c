@@ -156,7 +156,7 @@ void btn_process()
         }
 
     }
-    else if((!Button_.buttonFlag) && (checkTimer(&Button_.buttonTimer, 500)))
+    else if((!Button_.buttonFlag) && (checkTimer(&Button_.buttonTimer, 300)))
     {
         switch (Button_.Sel_BT) {
 

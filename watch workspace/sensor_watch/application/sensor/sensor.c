@@ -1149,6 +1149,17 @@ static void commStatusIndCB(ApiMac_mlmeCommStatusInd_t *pCommStatusInd)
 #endif
 
         Ssf_displayError("Security Error: ", pCommStatusInd->status);
+
+        /*Incase of security error disable and enable again*/
+        Jdllc_sendDisassociationRequest();
+           /* Tell the sensor to start */
+          Util_setEvent(&Sensor_events, SENSOR_START_EVT);
+          /* Wake up the application thread when it waits for clock event */
+          Ssf_PostAppSem();
+
+          Util_setEvent(&Jdllc_events, JDLLC_ASSOCIATE_REQ_EVT);
+
+          devInfoConfirmationFlag = 0;
     }
 }
 

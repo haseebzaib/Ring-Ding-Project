@@ -53,7 +53,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include "embedded_cli.h"
- 
+ #include <ti/drivers/UART2.h>
 
 typedef struct _cons_mail_t {
     uint8_t type;
@@ -103,7 +103,7 @@ extern EmbeddedCli *cli;
 /******************************************************************************
  Externs
  *****************************************************************************/
-
+extern UART2_Handle uart2Handle;
 extern int32_t gmt;
 extern uint8_t gmt_zone;
 /*Bindings*/
@@ -116,8 +116,11 @@ extern void eraseDevInfo(EmbeddedCli *cli, char *args, void *context);
 extern void setTime(EmbeddedCli *cli, char *args, void *context);
 extern void displayTime(EmbeddedCli *cli, char *args, void *context);
 extern void setWatchsTime(EmbeddedCli *cli, char *args, void *context);
+extern void createPairing(EmbeddedCli *cli, char *args, void *context);
+extern void allPairedDevices(EmbeddedCli *cli, char *args, void *context);
 
-
+extern void receiveString(UART2_Handle uart2Handle, char *buffer, size_t bufferSize);
+extern int receiveDecimalNumber(UART2_Handle uart2Handle);
 extern void setTimeEpoch();
 //extern uint32_t receiveEpochTime(UART2_Handle uart2Handle);
 extern void cli_printf(EmbeddedCli *cli, const char *format, ...);

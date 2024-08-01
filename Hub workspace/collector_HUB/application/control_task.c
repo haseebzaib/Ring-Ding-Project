@@ -71,6 +71,7 @@ Task_Params controlTaskParam;
 
 
  control_task_devices_info control_task_dev_info[CONFIG_MAX_DEVICES*2];
+ control_task_devices_pairing control_task_devPairing[CONFIG_MAX_DEVICES*2];
 
 
   typedef union {
@@ -163,7 +164,8 @@ static void check_devInfoMail()
                                /*There could be many reason it could have wiped clean */
                                /*Disaccociate from network and joined as different ID*/
                                /*dev signature are unique to all MCU*/
-                               if(control_task_dev_info[i].dev_shortAddr != DevInfomail.dev_shortAddr)
+                               if(control_task_dev_info[i].dev_shortAddr != DevInfomail.dev_shortAddr
+                                       || control_task_dev_info[i].isWatch == DevInfomail.isDing) //this is unlikely to happen but still a good condition to have incase
                                {
                                memcpy(&control_task_dev_info[i],&DevInfomail,sizeof(control_task_devices_info)); //no need to check anything else just copy this struct
                                save_par = 1;
@@ -193,9 +195,9 @@ static void check_devInfoMail()
                       par_save(device_info);
                        save_par = 0;
                    }
-                   Task_sleep(CLOCK_MS(200));
                    joinedDev_mail.shortAddr = DevInfomail.dev_shortAddr;
                    Util_setEvent(&Collector_events, COLLECTOR_SENSORS_SEND_Device_Info);
+                   Task_sleep(CLOCK_MS(500));
 
                }
 
@@ -214,8 +216,13 @@ static void controlTask_(uintptr_t arg1, uintptr_t arg2)
         control_task_dev_info[i].structValid = 0xFFFF;
     }
 
-   par_load(device_info);
+    for(int i=0; i<CONFIG_MAX_DEVICES*2; i++)
+    {
+        control_task_devPairing[i].structValid = 0xFFFF;
+    }
 
+   par_load(device_info);
+   par_load(device_pairing);
 
 
 

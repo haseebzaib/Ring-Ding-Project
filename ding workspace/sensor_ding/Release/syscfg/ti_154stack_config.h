@@ -25,10 +25,10 @@ extern "C"
 #define CONFIG_PAN_ID                   0xFFFF
 
 /* Setting for phy ID */
-#define CONFIG_PHY_ID                   APIMAC_200KBPS_915MHZ_PHY_132
+#define CONFIG_PHY_ID                   APIMAC_50KBPS_915MHZ_PHY_1
 
 /* Setting for channel page */
-#define CONFIG_CHANNEL_PAGE             APIMAC_CHANNEL_PAGE_10
+#define CONFIG_CHANNEL_PAGE             APIMAC_CHANNEL_PAGE_9
 
 
  /* Setting for symbol duration */
@@ -64,8 +64,8 @@ extern "C"
  e.g., 0x01 0x10 represents Ch0 and Ch12 are included.
  */
 #define CONFIG_FH_CHANNEL_MASK          { 0xFF,0xFF,0xFF,0xFF,0xFF,0xFF, \
-                                          0xFF,0xFF,0x00,0x00,0x00,0x00, \
-                                          0x00,0x00,0x00,0x00,0x00 }
+                                          0xFF,0xFF,0xFF,0xFF,0xFF,0xFF, \
+                                          0xFF,0xFF,0xFF,0xFF,0x01 }
 
 /*
  List of channels to target asynchronous frames when CONFIG_FH_ENABLE = true.
@@ -77,16 +77,16 @@ extern "C"
  it should be removed from Async Mask and excluded from the FH channel mask.
  */
 #define FH_ASYNC_CHANNEL_MASK           { 0xFF,0xFF,0xFF,0xFF,0xFF,0xFF, \
-                                          0xFF,0xFF,0x00,0x00,0x00,0x00, \
-                                          0x00,0x00,0x00,0x00,0x00 }
+                                          0xFF,0xFF,0xFF,0xFF,0xFF,0xFF, \
+                                          0xFF,0xFF,0xFF,0xFF,0x01 }
 
 /*
 Channel mask composed of all supported channels for selected PHY. Used to
 validate user input during runtime channel mask configuration.
 */
 #define CUI_VALID_CHANNEL_MASK          { 0xFF,0xFF,0xFF,0xFF,0xFF,0xFF, \
-                                          0xFF,0xFF,0x00,0x00,0x00,0x00, \
-                                          0x00,0x00,0x00,0x00,0x00 }
+                                          0xFF,0xFF,0xFF,0xFF,0xFF,0xFF, \
+                                          0xFF,0xFF,0xFF,0xFF,0x01 }
 
 /* Setting for FH network name attribute */
 #define CONFIG_FH_NETNAME               {"FHTest"}
@@ -101,7 +101,7 @@ validate user input during runtime channel mask configuration.
  Setting for polling interval - in milliseconds to be set on connected devices
  using configuration request messages
  */
-#define CONFIG_POLLING_INTERVAL         500
+#define CONFIG_POLLING_INTERVAL         800
 
 /* Setting for interval in ms between tracking message intervals */
 #define CONFIG_SCAN_BACKOFF_INTERVAL    5000

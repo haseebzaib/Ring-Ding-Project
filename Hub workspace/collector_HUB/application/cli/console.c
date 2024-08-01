@@ -43,7 +43,7 @@
 #include <stdarg.h>
 #include "stddef.h"
 #include <ctype.h>
-UART2_Handle uart2Handle;
+ UART2_Handle uart2Handle;
  Task_Struct consoleTask;        /* not static so you can see in ROV */
  Task_Params consoleTaskParam;
  uint8_t consoleTaskStack[consoleTaskStackSize];
@@ -121,6 +121,45 @@ static void writeChar(EmbeddedCli *embeddedCli, char c)
 {
     UART2_write(uart2Handle, (const void *)&c, sizeof(char), NULL);
 }
+
+
+
+void receiveString(UART2_Handle uart2Handle, char *buffer, size_t bufferSize)
+{
+    size_t index = 0;
+    uint8_t receivedChar;
+
+    while (1)
+    {
+        if (UART2_read(uart2Handle, &receivedChar, 1, NULL) == UART2_STATUS_SUCCESS)
+        {
+            if (receivedChar == '\x0d' || index == bufferSize - 1)
+            {
+                // Exit the loop when Enter key is pressed or buffer is full
+                buffer[index] = '\0'; // Null-terminate the string
+
+                // Convert the entered string to lowercase
+                for (size_t i = 0; buffer[i]; i++)
+                {
+                    buffer[i] = tolower(buffer[i]);
+                }
+                break;
+            }
+            else
+            {
+                // Check if the received character is an alphabet character
+                buffer[index++] = receivedChar;
+                UART2_write(uart2Handle, &receivedChar, 1, NULL);
+            }
+        }
+        else
+        {
+            // Handle UART read error
+            break;
+        }
+    }
+}
+
 int receiveDecimalNumber(UART2_Handle uart2Handle)
 {
     int decimalNumber = 0;
@@ -330,6 +369,21 @@ static void initializeEmbeddedCli()
                       .context = NULL,
                       .binding = setWatchsTime};
 
+       CliCommandBinding binding10 = {
+                      .name = "create-pairing",
+                      .help = "Create pairing of Watches and Call-Button",
+                      .tokenizeArgs = false,
+                      .context = NULL,
+                      .binding = createPairing};
+
+       CliCommandBinding binding11 = {
+                         .name = "all-paired-devices",
+                         .help = "Show all paired devices",
+                         .tokenizeArgs = false,
+                         .context = NULL,
+                         .binding = allPairedDevices};
+
+
     embeddedCliAddBinding(cli, binding1);
     embeddedCliAddBinding(cli, binding2);
     embeddedCliAddBinding(cli, binding3);
@@ -339,6 +393,8 @@ static void initializeEmbeddedCli()
     embeddedCliAddBinding(cli, binding7);
     embeddedCliAddBinding(cli, binding8);
     embeddedCliAddBinding(cli, binding9);
+    embeddedCliAddBinding(cli, binding10);
+    embeddedCliAddBinding(cli, binding11);
 
     cli->onCommand = onCommand;
     cli->writeChar = writeChar;

@@ -73,27 +73,27 @@ RF_TxPowerTable_Entry txPowerTable_868_pa13[TXPOWERTABLE_868_PA13_SIZE] =
 
 
 //*********************************************************************************
-//  RF Setting:   200 kbps, 50 kHz Deviation, 2-GFSK, 311 kHz RX Bandwidth
+//  RF Setting:   IEEE 802.15.4, 50 kbps, 25 kHz Deviation, 2-GFSK, 100 kHz RX Bandwidth
 //
-//  PHY:          2gfsk200kbps154g
-//  Setting file: setting_tc146_154g.json
+//  PHY:          2gfsk50kbps154g
+//  Setting file: setting_tc106_154g.json
 //*********************************************************************************
 
 // PARAMETER SUMMARY
 // Frequency (MHz): 915.0000
-// Deviation (kHz): 50.0
+// Deviation (kHz): 25.0
 // Max Packet Length: 2047
 // Preamble Count: 7 Bytes
 // Preamble Mode: Send 0 as the first preamble bit
-// RX Filter BW (kHz): 310.8
-// Symbol Rate (kBaud): 200.000
+// RX Filter BW (kHz): 98.0
+// Symbol Rate (kBaud): 50.000
 // Sync Word: 0x55904E
 // Sync Word Length: 24 Bits
 // TX Power (dBm): 5
 // Whitening: Dynamically IEEE 802.15.4g compatible whitener and 16/32-bit CRC
 
 // TI-RTOS RF Mode Object
-RF_Mode RF_prop_2gfsk200kbps154g =
+RF_Mode RF_prop_2gfsk50kbps154g =
 {
     .rfMode = RF_MODE_AUTO,
     .cpePatchFxn = &rf_patch_cpe_multi_protocol,
@@ -102,7 +102,7 @@ RF_Mode RF_prop_2gfsk200kbps154g =
 };
 
 // Overrides for CMD_PROP_RADIO_DIV_SETUP
-uint32_t pOverrides_2gfsk200kbps154g[] =
+uint32_t pOverrides_2gfsk50kbps154g[] =
 {
     // override_txsub1_placeholder.json
     // TX sub-1GHz power override
@@ -115,17 +115,17 @@ uint32_t pOverrides_2gfsk200kbps154g[] =
     HW32_ARRAY_OVERRIDE(0x405C,0x0001),
     // TX: Set FSCA divider bias to 1
     (uint32_t)0x08141131,
-    // override_tc146.json
+    // override_tc106.json
     // Tx: Configure PA ramp time, PACTL2.RC=0x1 (in ADI0, set PACTL2[4:3]=0x1)
     ADI_2HALFREG_OVERRIDE(0,16,0x8,0x8,17,0x1,0x1),
+    // Rx: Set AGC reference level to 0x1A (default: 0x2E)
+    HW_REG_OVERRIDE(0x609C,0x001A),
+    // Rx: Set RSSI offset to adjust reported RSSI by -1 dB at 779-930 MHz
+    (uint32_t)0x000188A3,
+    // Rx: Set anti-aliasing filter bandwidth to 0xD (in ADI0, set IFAMPCTL3[7:4]=0xD)
+    ADI_HALFREG_OVERRIDE(0,61,0xF,0xD),
     // Tx: Configure PA ramping, set wait time before turning off (0x1A ticks of 16/24 us = 17.3 us).
     HW_REG_OVERRIDE(0x6028,0x001A),
-    // Rx: Set AGC reference level to 0x16 (default: 0x2E)
-    HW_REG_OVERRIDE(0x609C,0x0016),
-    // RSSI offset of -1 dB at 779-930 MHz
-    (uint32_t)0x000188A3,
-    // Rx: Set anti-aliasing filter bandwidth to 0x8 (in ADI0, set IFAMPCTL3[7:4]=0x8)
-    ADI_HALFREG_OVERRIDE(0,61,0xF,0x8),
     // ti/ti154stack/common/boards/ti_154stack_overrides.h
     TI_154_STACK_OVERRIDES(),
     (uint32_t)0xFFFFFFFF
@@ -135,7 +135,7 @@ uint32_t pOverrides_2gfsk200kbps154g[] =
 
 // CMD_PROP_RADIO_DIV_SETUP
 // Proprietary Mode Radio Setup Command for All Frequency Bands
-const rfc_CMD_PROP_RADIO_DIV_SETUP_t RF_cmdPropRadioDivSetup_2gfsk200kbps154g =
+const rfc_CMD_PROP_RADIO_DIV_SETUP_t RF_cmdPropRadioDivSetup_2gfsk50kbps154g =
 {
     .commandNo = 0x3807,
     .status = 0x0000,
@@ -148,12 +148,12 @@ const rfc_CMD_PROP_RADIO_DIV_SETUP_t RF_cmdPropRadioDivSetup_2gfsk200kbps154g =
     .condition.rule = 0x1,
     .condition.nSkip = 0x0,
     .modulation.modType = 0x1,
-    .modulation.deviation = 0xC8,
+    .modulation.deviation = 0x64,
     .modulation.deviationStepSz = 0x0,
     .symbolRate.preScale = 0xF,
-    .symbolRate.rateWord = 0x20000,
+    .symbolRate.rateWord = 0x8000,
     .symbolRate.decimMode = 0x0,
-    .rxBw = 0x59,
+    .rxBw = 0x52,
     .preamConf.nPreamBytes = 0x7,
     .preamConf.preamMode = 0x0,
     .formatConf.nSwBits = 0x18,
@@ -167,15 +167,15 @@ const rfc_CMD_PROP_RADIO_DIV_SETUP_t RF_cmdPropRadioDivSetup_2gfsk200kbps154g =
     .config.bNoFsPowerUp = 0x0,
     .config.bSynthNarrowBand = 0x0,
     .txPower = 0xFFFE,
-    .pRegOverride = pOverrides_2gfsk200kbps154g,
+    .pRegOverride = pOverrides_2gfsk50kbps154g,
     .centerFreq = 0x0393,
-    .intFreq = 0x0999,
+    .intFreq = 0x8000,
     .loDivider = 0x05
 };
 
 // CMD_FS
 // Frequency Synthesizer Programming Command
-const rfc_CMD_FS_t RF_cmdFs_2gfsk200kbps154g =
+const rfc_CMD_FS_t RF_cmdFs_2gfsk50kbps154g =
 {
     .commandNo = 0x0803,
     .status = 0x0000,
@@ -199,7 +199,7 @@ const rfc_CMD_FS_t RF_cmdFs_2gfsk200kbps154g =
 
 // CMD_PROP_TX_ADV
 // Proprietary Mode Advanced Transmit Command
-const rfc_CMD_PROP_TX_ADV_t RF_cmdPropTxAdv_2gfsk200kbps154g =
+const rfc_CMD_PROP_TX_ADV_t RF_cmdPropTxAdv_2gfsk50kbps154g =
 {
     .commandNo = 0x3803,
     .status = 0x0000,
@@ -231,7 +231,7 @@ const rfc_CMD_PROP_TX_ADV_t RF_cmdPropTxAdv_2gfsk200kbps154g =
 
 // CMD_PROP_RX_ADV
 // Proprietary Mode Advanced Receive Command
-const rfc_CMD_PROP_RX_ADV_t RF_cmdPropRxAdv_2gfsk200kbps154g =
+const rfc_CMD_PROP_RX_ADV_t RF_cmdPropRxAdv_2gfsk50kbps154g =
 {
     .commandNo = 0x3804,
     .status = 0x0000,
@@ -281,7 +281,7 @@ const rfc_CMD_PROP_RX_ADV_t RF_cmdPropRxAdv_2gfsk200kbps154g =
 
 // CMD_PROP_CS
 // Carrier Sense Command
-const rfc_CMD_PROP_CS_t RF_cmdPropCs_2gfsk200kbps154g =
+const rfc_CMD_PROP_CS_t RF_cmdPropCs_2gfsk50kbps154g =
 {
     .commandNo = 0x3805,
     .status = 0x0000,

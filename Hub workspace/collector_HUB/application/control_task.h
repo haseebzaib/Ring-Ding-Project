@@ -28,10 +28,7 @@ TYPEDEF_STRUCT_PACKED {
     uint16_t structValid;
 }control_task_devices_info;
 
-//extern control_task_devices_info control_task_runtime_info[CONFIG_MAX_DEVICES];
-//extern control_task_devices_info control_task_watch_info[CONFIG_MAX_DEVICES];
-//extern control_task_devices_info control_task_ding_info[CONFIG_MAX_DEVICES];
-//extern control_task_devices_info control_task_manager_info[CONFIG_MAX_DEVICES];
+
 
 extern control_task_devices_info control_task_dev_info[CONFIG_MAX_DEVICES*2];
 
@@ -40,11 +37,17 @@ extern control_task_devices_info control_task_dev_info[CONFIG_MAX_DEVICES*2];
 
 /* These paired devices will only receive messages from one another */
 TYPEDEF_STRUCT_PACKED {
+    uint16_t watch_shortAddr;
+    uint16_t Manager_shortAddr;
+    uint16_t ding_shortAddr;
     uint64_t Watch_Devsignature;  /*Pairing using unique signature of CC1314*/
     uint64_t Ding_Devsignature;    /*Pairing using unique signature of CC1314*/
     uint64_t Manager_Devsignature; /*if this 0xFFFFFFFF, then every manager will receive
                                     the notification for paired devices */
-   uint16_t structValid;
+    uint16_t Watch_ReferenceNumber;//watch can also be given reference number while make a pair of multiple devices
+    uint16_t Ding_ReferenceNumber; //During configuration and pairing devices this reference number can be given to
+                                   //call button as a table or any reference number which can be understood by waiter
+    uint16_t structValid;
 }control_task_devices_pairing;
 
 extern control_task_devices_pairing control_task_devPairing[CONFIG_MAX_DEVICES*2];
@@ -52,9 +55,10 @@ extern control_task_devices_pairing control_task_devPairing[CONFIG_MAX_DEVICES*2
 
 
 TYPEDEF_STRUCT_PACKED {
-
-
-}control_task_notification_info;
+    button_codes Noti_Code;
+    uint16_t Watch_ReferenceNumber;
+    uint16_t Ding_ReferenceNumber;
+}control_task_Sendnotification_info;
 
 
 typedef struct _control_task_joinedDev_mail
@@ -73,11 +77,7 @@ TYPEDEF_STRUCT_PACKED {
     /*These two parameters are important as they are for identification of device*/
     uint16_t dev_shortAddr;  /*device short address to send messages on*/
     uint64_t dev_signature;  /*unique signature of CC1314*/
-
     button_codes Noti_Code; /*This will tell hub what the noti is for*/
-
-
-
 }control_task_CallButtonNotification_Info;
 
 

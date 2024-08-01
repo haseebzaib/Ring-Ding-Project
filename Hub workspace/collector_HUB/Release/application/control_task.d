@@ -94,6 +94,9 @@ application/control_task.o: ../application/control_task.c \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/control_task.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/console.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/embedded_cli.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/UART2.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/SemaphoreP.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/utils/RingBuf.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/common/util/mac_util.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/par.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/clock/time_clock.h \
@@ -291,6 +294,12 @@ C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/H
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/console.h:
 
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/embedded_cli.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/UART2.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/SemaphoreP.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/utils/RingBuf.h:
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/common/util/mac_util.h:
 

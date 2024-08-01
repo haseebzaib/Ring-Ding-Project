@@ -110,6 +110,8 @@ application/collector/csf.o: ../application/collector/csf.c \
  syscfg/ti_radio_config.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/console.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/embedded_cli.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/UART2.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/utils/RingBuf.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/control_task.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/BIOS.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/runtime/Types.h \
@@ -339,6 +341,10 @@ syscfg/ti_radio_config.h:
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/console.h:
 
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/embedded_cli.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/UART2.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/utils/RingBuf.h:
 
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/control_task.h:
 
