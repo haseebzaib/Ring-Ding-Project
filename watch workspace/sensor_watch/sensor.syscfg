@@ -1,7 +1,7 @@
 /**
  * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
  * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
- * @cliArgs --board "/ti/boards/LP_EM_CC1314R10" --rtos "tirtos7" --product "simplelink_cc13xx_cc26xx_sdk@7.40.00.77"
+ * @cliArgs --board "/ti/boards/LP_EM_CC1314R10" --rtos "tirtos7" --product "simplelink_cc13xx_cc26xx_sdk@7.41.00.17"
  * @versions {"tool":"1.18.1+3343"}
  */
 
@@ -25,6 +25,8 @@ const Timer1       = Timer.addInstance();
 const Button       = scripting.addModule("/ti/drivers/apps/Button");
 const Button1      = Button.addInstance();
 const Button2      = Button.addInstance();
+const Button3      = Button.addInstance();
+const Button4      = Button.addInstance();
 const LED          = scripting.addModule("/ti/drivers/apps/LED");
 const LED1         = LED.addInstance();
 const LED2         = LED.addInstance();
@@ -82,18 +84,20 @@ SPI1.minDmaTransferSize   = 1;
 SPI1.defaultTxBufferValue = "0";
 
 Timer1.timerType           = "32 Bits";
-Timer1.$name               = "btn_con_timer";
-Timer1.timerInstance.$name = "btn_con_gp_timer";
+Timer1.$name               = "CONFIG_TIMER_0";
+Timer1.timerInstance.$name = "CONFIG_TIMER_0_GP";
 
-Button1.$hardware     = system.deviceData.board.components["BTN-1"];
-Button1.$name         = "CONFIG_BTN_LEFT";
-Button1.gpioPin.$name = "CONFIG_GPIO_BTN1";
-Button1.gpioPin.pull  = "Pull Up";
+Button1.$hardware = system.deviceData.board.components["BTN-1"];
+Button1.$name     = "BTN_DWN";
 
-Button2.$hardware     = system.deviceData.board.components["BTN-2"];
-Button2.$name         = "CONFIG_BTN_RIGHT";
-Button2.gpioPin.$name = "CONFIG_GPIO_BTN2";
-Button2.gpioPin.pull  = "Pull Up";
+Button2.$hardware = system.deviceData.board.components["BTN-2"];
+Button2.$name     = "BTN_UP";
+
+Button3.$name          = "BTN_ENTR";
+Button3.button.$assign = "boosterpack.32";
+
+Button4.$name          = "BTN_EXIT";
+Button4.button.$assign = "boosterpack.31";
 
 LED1.$hardware     = system.deviceData.board.components.LED_RED;
 LED1.$name         = "CONFIG_LED_RED";
@@ -143,8 +147,8 @@ System.supportModule     = "SysCallback";
 ti154stack.project                            = "sensor";
 ti154stack.lockProject                        = true;
 ti154stack.transmitPower                      = "5";
-ti154stack.reportingInterval                  = 10000;
-ti154stack.pollingInterval                    = 500;
+ti154stack.reportingInterval                  = 15000;
+ti154stack.pollingInterval                    = 1000;
 ti154stack.radioConfig.codeExportConfig.$name = "ti_devices_radioconfig_code_export_param0";
 ti154stack.aesccmModule.$name                 = "CONFIG_AESCCM_0";
 ti154stack.ti154stackModule.$name             = "ti_ti154stack_ti154stack_config_mod0";

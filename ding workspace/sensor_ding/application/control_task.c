@@ -14,9 +14,10 @@
 #include <ioc.h>
 
 #include "sys_ctrl.h"
-
+#include "jdllc.h"
 #include "ti_drivers_config.h"
-
+#include "mac_util.h"
+#include "ssf.h"
 #include <inc/hw_ccfg.h>
 #include <inc/hw_ccfg_simple_struct.h>
 
@@ -86,6 +87,8 @@ bit16_2_8bits conv;
 uint8_t devInfoConfirmationFlag = 0;
 uint32_t devInfoConfirmationTimer = 0;
 uint8_t devInfoConfirmationMail = 0;
+uint8_t disconnected_ledShow =1;
+uint8_t retry_count_devInfo = 0;
 
 
 /*static variables*/
@@ -97,11 +100,18 @@ static uint16_t Num_MsgLedConfirmMail = 0;
 static uint16_t Num_MsgNotiInfoMail = 0;
 
 /*Function prototypes*/
+static void show_disconnectionColor();
 static void check_NotiInfoMail();
 static void check_devInfoMail();
 static void check_ledConfirmMail();
 static void set_normalColor();
 static void controlTask_(uintptr_t arg1, uintptr_t arg2);
+
+
+static void show_disconnectionColor()
+{
+    NeoPixelEffect_strobe(255, 0, 0, 3, 300, 0, NUMBER_OF_LEDS);
+}
 
 static void check_NotiInfoMail()
 {
@@ -135,8 +145,7 @@ static void check_NotiInfoMail()
                 cmdbyte[10] = macAddrMsb.B[3];
                 /*Notification Code*/
                 cmdbyte[11] = NotiInfo_mail.Noti_Code;
-
-                Task_sleep(CLOCK_MS(300));
+                //Task_sleep(CLOCK_MS(300));
                 Sensor_sendMsg(Smsgs_cmdIds_SensorNotiInfo,
                                &collectorAddr_app, true, 12, cmdbyte);
 
@@ -204,8 +213,32 @@ static void check_devInfoMail()
 
     if (devInfoConfirmationMail == 1)
     {
+        retry_count_devInfo++;
         devInfoConfirmationMail = 0;
         control_task_mail_post_InfoToHub(1);
+    }
+
+    /*Do 10 retries only*/
+    if(retry_count_devInfo > 10)
+    {
+        devInfoConfirmationFlag = 0;
+        devInfoConfirmationTimer = 0;
+        devInfoConfirmationMail = 0;
+        retry_count_devInfo = 0;
+
+
+        Jdllc_sendDisassociationRequest();
+
+        /* Clear the event */
+        Util_clearEvent(&Sensor_events, SENSOR_DISASSOC_EVT);
+
+        /* Tell the sensor to start */
+       Util_setEvent(&Sensor_events, SENSOR_START_EVT);
+       /* Wake up the application thread when it waits for clock event */
+       Ssf_PostAppSem();
+       Util_setEvent(&Jdllc_events, JDLLC_ASSOCIATE_REQ_EVT);
+
+
     }
 
 }
@@ -267,7 +300,7 @@ static void controlTask_(uintptr_t arg1, uintptr_t arg2)
     btn_init();
     timer_init();
 
-
+    disconnected_ledShow = 1;
 
     /*compute unique ID here for MCU*/
     macAddrLsb.L = HWREG(FCFG1_BASE + FCFG1_O_MAC_15_4_0);
@@ -287,6 +320,10 @@ static void controlTask_(uintptr_t arg1, uintptr_t arg2)
     while (1)
     {
 
+        if(disconnected_ledShow)
+        {
+            show_disconnectionColor();
+        }
 
         check_devInfoMail();
         check_NotiInfoMail();
@@ -294,7 +331,7 @@ static void controlTask_(uintptr_t arg1, uintptr_t arg2)
         set_normalColor();
 
 
-        Task_sleep(CLOCK_MS(200));
+        Task_sleep(CLOCK_MS(100));
 
     }
 

@@ -100,13 +100,13 @@ validate user input during runtime channel mask configuration.
  Setting for reporting interval - in milliseconds to be set on connected devices
  using configuration request messages
  */
-#define CONFIG_REPORTING_INTERVAL       10000
+#define CONFIG_REPORTING_INTERVAL       15000
 
 /*
  Setting for polling interval - in milliseconds to be set on connected devices
  using configuration request messages
  */
-#define CONFIG_POLLING_INTERVAL         800
+#define CONFIG_POLLING_INTERVAL         1100
 
 /* Setting for interval in ms between tracking message intervals */
 #define TRACKING_DELAY_TIME             10000

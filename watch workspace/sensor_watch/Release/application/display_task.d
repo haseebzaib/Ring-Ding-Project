@@ -86,9 +86,12 @@ application/display_task.o: ../application/display_task.c \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox_defs.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/Defines.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Timer.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/SemaphoreP.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/common/osal_port/api_mac.h \
  syscfg/ti_154stack_features.h \
  syscfg/ti_154stack_config.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/semaphore.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/sensor/sensor.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/sensor/smsgs.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/control_task.h \
@@ -113,8 +116,7 @@ application/display_task.o: ../application/display_task.c \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/hal/platform/comdef.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/hal/platform/hal_types.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/hal/platform/hal_defs.h \
- C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/clock/utc_clock.h \
- C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/btn_con.h
+ C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/clock/utc_clock.h
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/BIOS.h:
 
@@ -286,11 +288,17 @@ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios
 
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/Defines.h:
 
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Timer.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/SemaphoreP.h:
+
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/common/osal_port/api_mac.h:
 
 syscfg/ti_154stack_features.h:
 
 syscfg/ti_154stack_config.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/semaphore.h:
 
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/sensor/sensor.h:
 
@@ -341,5 +349,3 @@ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/hal/platform/
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/hal/platform/hal_defs.h:
 
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/clock/utc_clock.h:
-
-C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/btn_con.h:

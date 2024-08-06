@@ -76,13 +76,21 @@ extern const uint_least8_t CONFIG_GPIO_DISPLAY_UART_TX_CONST;
 extern const uint_least8_t CONFIG_GPIO_DISPLAY_UART_RX_CONST;
 #define CONFIG_GPIO_DISPLAY_UART_RX 2
 
-/* Owned by CONFIG_BTN_LEFT as  */
-extern const uint_least8_t CONFIG_GPIO_BTN1_CONST;
-#define CONFIG_GPIO_BTN1 15
+/* Owned by BTN_DWN as  */
+extern const uint_least8_t CONFIG_GPIO_BTN_DWN_INPUT_CONST;
+#define CONFIG_GPIO_BTN_DWN_INPUT 15
 
-/* Owned by CONFIG_BTN_RIGHT as  */
-extern const uint_least8_t CONFIG_GPIO_BTN2_CONST;
-#define CONFIG_GPIO_BTN2 14
+/* Owned by BTN_UP as  */
+extern const uint_least8_t CONFIG_GPIO_BTN_UP_INPUT_CONST;
+#define CONFIG_GPIO_BTN_UP_INPUT 14
+
+/* Owned by BTN_ENTR as  */
+extern const uint_least8_t CONFIG_GPIO_BTN_ENTR_INPUT_CONST;
+#define CONFIG_GPIO_BTN_ENTR_INPUT 16
+
+/* Owned by BTN_EXIT as  */
+extern const uint_least8_t CONFIG_GPIO_BTN_EXIT_INPUT_CONST;
+#define CONFIG_GPIO_BTN_EXIT_INPUT 17
 
 /* Owned by CONFIG_LED_RED as  */
 extern const uint_least8_t CONFIG_GPIO_RLED_CONST;
@@ -134,8 +142,8 @@ extern const uint_least8_t              CONFIG_SPI_LCD_CONST;
  *  ======== Timer ========
  */
 
-extern const uint_least8_t                  btn_con_timer_CONST;
-#define btn_con_timer                       0
+extern const uint_least8_t                  CONFIG_TIMER_0_CONST;
+#define CONFIG_TIMER_0                      0
 #define CONFIG_TI_DRIVERS_TIMER_COUNT       1
 
 
@@ -157,11 +165,15 @@ extern const uint_least8_t                  CONFIG_DISPLAY_UART_CONST;
  *  ======== Button ========
  */
 
-extern const uint_least8_t                  CONFIG_BTN_LEFT_CONST;
-#define CONFIG_BTN_LEFT                     0
-extern const uint_least8_t                  CONFIG_BTN_RIGHT_CONST;
-#define CONFIG_BTN_RIGHT                    1
-#define CONFIG_TI_DRIVERS_BUTTON_COUNT      2
+extern const uint_least8_t                  BTN_DWN_CONST;
+#define BTN_DWN                             0
+extern const uint_least8_t                  BTN_UP_CONST;
+#define BTN_UP                              1
+extern const uint_least8_t                  BTN_ENTR_CONST;
+#define BTN_ENTR                            2
+extern const uint_least8_t                  BTN_EXIT_CONST;
+#define BTN_EXIT                            3
+#define CONFIG_TI_DRIVERS_BUTTON_COUNT      4
 
 
 /*
@@ -179,8 +191,8 @@ extern const uint_least8_t              CONFIG_LED_GREEN_CONST;
  *  ======== GPTimer ========
  */
 
-extern const uint_least8_t                  btn_con_gp_timer_CONST;
-#define btn_con_gp_timer                    0
+extern const uint_least8_t                  CONFIG_TIMER_0_GP_CONST;
+#define CONFIG_TIMER_0_GP                   0
 #define CONFIG_TI_DRIVERS_GPTIMER_COUNT     1
 
 

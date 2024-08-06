@@ -376,7 +376,7 @@ extern bool Ssf_getFrameCounter(ApiMac_sAddr_t *pDevAddr,
  * @param       code -  numeric code to display
  */
 extern void Ssf_displayError(const char *pTxt, uint8_t code);
-
+extern void Ssf_display(  const uint32_t _lineId,const char *pTxt, uint8_t code);
 /*!
  * @brief       Assert Indication
  *

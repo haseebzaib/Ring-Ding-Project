@@ -260,6 +260,7 @@ The <b>Sensor Ramp Data Message</b> is defined as:
     Smsgs_cmdIds_SensorSetTime = 20,//setting time of sensor from collector
     Smsgs_cmdIds_SensorNotiInfo = 21, //sensor sending this to collector
     Smsgs_cmdIds_SensorNotiConfirmation = 22, //receiving from collector
+    Smsgs_cmdIds_SensorNotiToWatch =23,
 
  } Smsgs_cmdIds_t;
 

@@ -1725,6 +1725,14 @@ void Ssf_displayError(const char *pTxt, uint8_t code)
 #endif /* CUI_DISABLE */
 }
 
+void Ssf_display(  const uint32_t _lineId,const char *pTxt, uint8_t code)
+{
+
+#ifndef CUI_DISABLE
+    CUI_statusLinePrintf(ssfCuiHndl, sensorStatusLine, "%s%d", pTxt, code);
+#endif /* CUI_DISABLE */
+}
+
 /*!
  Assert Indication
 

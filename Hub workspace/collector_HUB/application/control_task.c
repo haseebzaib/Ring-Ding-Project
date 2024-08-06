@@ -93,10 +93,14 @@ Task_Params controlTaskParam;
   bit16_2_8bits conv;
 
 
+  bit16_2_8bits conv_notiinfo;
+
+
   uint8_t save_par = 0;
   /*Static variable */
 
   static control_task_CallButtonNotification_Info NotiInfo_mail;
+  static control_task_Sendnotification_info SendNotiInfo;
 
 
  static uint16_t Num_MsgJoinedDevMail = 0;
@@ -111,6 +115,8 @@ static void controlTask_(uintptr_t arg1, uintptr_t arg2);
 
 static void check_NotiInfoMail()
 {
+    uint16_t iteration = 0;
+    uint32_t timeout = 0;
     Num_MsgNotiInfoMail = Mailbox_getNumPendingMsgs(
             control_task_NotiInfo_handle);
 
@@ -121,7 +127,98 @@ static void check_NotiInfoMail()
                                     &NotiInfo_mail, BIOS_WAIT_FOREVER);
         if (success)
         {
-            cli_printf(cli, " NotiReceived from %d", NotiInfo_mail.dev_shortAddr);
+            //cli_printf(cli, " NotiReceived from %d", NotiInfo_mail.dev_shortAddr);
+
+
+
+            /*First we check even if this button is paired with any watch in the network*/
+
+            for (int i = 0; i < CONFIG_MAX_DEVICES * 2; i++)
+             {
+                if (control_task_devPairing[i].structValid == 0xBEEF)
+                  {
+                    /*if signature match then move forward*/
+                    if (NotiInfo_mail.dev_signature == control_task_devPairing[i].Ding_Devsignature)
+                    {
+                        /*Now we want to find the paired watch in our device info structure and send message to it*/
+                        /*Also look for manager and send message to him as well if any manager is assigned to this callbutton*/
+
+
+                        SendNotiInfo.Ding_ReferenceNumber =  control_task_devPairing[i].Ding_ReferenceNumber;
+                        SendNotiInfo.Watch_ReferenceNumber =  control_task_devPairing[i].Watch_ReferenceNumber;
+                        SendNotiInfo.Noti_Code = NotiInfo_mail.Noti_Code;
+                        for (int j = 0; j < CONFIG_MAX_DEVICES * 2; j++)
+                        {
+
+                            /*This tell us that the stuff stored in struct is valid*/
+                            if(control_task_dev_info[j].structValid == 0xBEEF)
+                            {
+                                if(control_task_dev_info[j].dev_signature == control_task_devPairing[i].Watch_Devsignature)
+                                {
+                                    uint8_t buffer[6];
+                                    buffer[0] = (uint8_t)Smsgs_cmdIds_SensorNotiToWatch;
+                                    buffer[1] =  (uint8_t) SendNotiInfo.Noti_Code;
+                                    conv_notiinfo.L = SendNotiInfo.Watch_ReferenceNumber;
+                                    buffer[2] = conv_notiinfo.B[0];
+                                    buffer[3] = conv_notiinfo.B[1];
+                                    conv_notiinfo.L = SendNotiInfo.Ding_ReferenceNumber;
+                                    buffer[4] = conv_notiinfo.B[0];
+                                    buffer[5] = conv_notiinfo.B[1];
+
+                                    //if(sendMsg(Smsgs_cmdIds_SensorNotiToWatch,control_task_dev_info[j].dev_shortAddr,false, 6, buffer);
+                                  //  Task_sleep(CLOCK_MS(600));
+                                    while(!sendMsg(Smsgs_cmdIds_SensorNotiToWatch,control_task_dev_info[j].dev_shortAddr,false, 6, buffer)  && timeout < 10)
+                                    {
+                                        Task_sleep(CLOCK_MS(100));
+                                        timeout++;
+                                    }
+                                    timeout = 0;
+
+                                }
+
+                                if(control_task_dev_info[j].dev_signature == control_task_devPairing[i].Manager_Devsignature)
+                                {
+                                    uint8_t buffer[6];
+                                    buffer[0] = (uint8_t)Smsgs_cmdIds_SensorNotiToWatch;
+                                    buffer[1] =  (uint8_t) SendNotiInfo.Noti_Code;
+                                    conv_notiinfo.L = SendNotiInfo.Watch_ReferenceNumber;
+                                    buffer[2] = conv_notiinfo.B[0];
+                                    buffer[3] = conv_notiinfo.B[1];
+                                    conv_notiinfo.L = SendNotiInfo.Ding_ReferenceNumber;
+                                    buffer[4] = conv_notiinfo.B[0];
+                                    buffer[5] = conv_notiinfo.B[1];
+                                   // Task_sleep(CLOCK_MS(600));
+                                    while(!sendMsg(Smsgs_cmdIds_SensorNotiToWatch,control_task_dev_info[j].dev_shortAddr,false, 6, buffer) && timeout < 10)
+                                    {
+                                        Task_sleep(CLOCK_MS(100));
+                                        timeout++;
+                                    }
+
+                                    timeout = 0;
+
+                                }
+
+
+                            }
+
+
+
+                        }
+
+
+
+
+                        break;
+
+                    }
+
+                  }
+
+
+             }
+
+
+
 
 
         }
@@ -196,9 +293,16 @@ static void check_devInfoMail()
                        save_par = 0;
                    }
                    joinedDev_mail.shortAddr = DevInfomail.dev_shortAddr;
-                   Util_setEvent(&Collector_events, COLLECTOR_SENSORS_SEND_Device_Info);
-                   Task_sleep(CLOCK_MS(500));
+                 //  Util_setEvent(&Collector_events, COLLECTOR_SENSORS_SEND_Device_Info);
+                 //  Task_sleep(CLOCK_MS(500));
 
+                   uint8_t buffer[1];
+                       /* Build the message */
+                       buffer[0] = (uint8_t)Smsgs_cmdIds_SensorSendDeviceInfoConfirmation;
+
+                    sendMsg(Smsgs_cmdIds_SensorSendDeviceInfoConfirmation,
+                            joinedDev_mail.shortAddr,
+                            false, 1, buffer);
                }
 
            }

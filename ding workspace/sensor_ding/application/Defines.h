@@ -26,7 +26,7 @@
 extern  uint32_t devInfoConfirmationTimer;
 extern  uint8_t devInfoConfirmationFlag;
 extern  uint8_t devInfoConfirmationMail;
-
+extern uint8_t disconnected_ledShow;
 
 
 typedef enum{

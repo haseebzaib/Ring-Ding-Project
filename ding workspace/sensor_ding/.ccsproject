@@ -16,4 +16,6 @@
 	<templateProperties value="id=sensor_LP_EM_CC1314R10_tirtos7_ticlang.projectspec.sensor_LP_EM_CC1314R10_tirtos7_ticlang,buildProfile=release,isHybrid=true"/>
 	<origin value="C:\ti\simplelink_cc13xx_cc26xx_sdk_7_40_00_77\examples\rtos\LP_EM_CC1314R10\ti154stack\sensor\tirtos7\ticlang\sensor_LP_EM_CC1314R10_tirtos7_ticlang.projectspec"/>
 	<filesToOpen value="README.html"/>
+	<sourceLookupPath value=""/>
+	<isTargetManual value="false"/>
 </projectOptions>

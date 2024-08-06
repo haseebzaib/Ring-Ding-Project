@@ -869,8 +869,14 @@ void Sensor_process(void)
 #endif /* FEATURE_SECURE_COMMISSIONING */
 #endif /* USE_DMM */
 
-        /* Clear the event */
-        Util_clearEvent(&Sensor_events, SENSOR_DISASSOC_EVT);
+//        /* Clear the event */
+//        Util_clearEvent(&Sensor_events, SENSOR_DISASSOC_EVT);
+//
+//        /* Tell the sensor to start */
+//       Util_setEvent(&Sensor_events, SENSOR_START_EVT);
+//       /* Wake up the application thread when it waits for clock event */
+//       Ssf_PostAppSem();
+//       Util_setEvent(&Jdllc_events, JDLLC_ASSOCIATE_REQ_EVT);
     }
 
 #ifdef DMM_OAD
@@ -1158,6 +1164,7 @@ static void commStatusIndCB(ApiMac_mlmeCommStatusInd_t *pCommStatusInd)
             Util_setEvent(&Jdllc_events, JDLLC_ASSOCIATE_REQ_EVT);
 
             devInfoConfirmationFlag = 0;
+            disconnected_ledShow =1;
     }
 }
 
@@ -2259,6 +2266,7 @@ static void jdllcDisassocIndCb(ApiMac_sAddrExt_t *pExtAddress,
 #endif //FEATURE_NATIVE_OAD
 
     devInfoConfirmationFlag = 0;
+    disconnected_ledShow =1;
 }
 
 /*!
@@ -2291,6 +2299,7 @@ static void jdllcDisassocCnfCb(ApiMac_sAddrExt_t *pExtAddress,
     OADClient_abort(false);
 #endif //FEATURE_NATIVE_OAD
     devInfoConfirmationFlag = 0;
+    disconnected_ledShow =1;
 }
 
 /*!
@@ -2366,18 +2375,34 @@ static void jdllcStateChangeCb(Jdllc_states_t state)
 
               devInfoConfirmationFlag = 0;
               orphanestate = 1;
+              disconnected_ledShow =1;
        }
 
     if(state == Jdllc_states_joined )
       {
           orphanestate = 0;
           control_task_mail_post_InfoToHub(1);
+          disconnected_ledShow =0;
       }
+
+    if(state == Jdllc_states_initWaiting)
+    {
+        Jdllc_sendDisassociationRequest();
+        /* Tell the sensor to start */
+       Util_setEvent(&Sensor_events, SENSOR_START_EVT);
+       /* Wake up the application thread when it waits for clock event */
+       Ssf_PostAppSem();
+
+       Util_setEvent(&Jdllc_events, JDLLC_ASSOCIATE_REQ_EVT);
+      //  strcpy(network_info,"Waiting");
+       disconnected_ledShow =1;
+    }
 
      if(state == Jdllc_states_rejoined)
       {
          orphanestate = 0;
         control_task_mail_post_InfoToHub(1);
+        disconnected_ledShow =0;
        }
 
 }

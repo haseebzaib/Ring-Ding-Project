@@ -144,12 +144,14 @@ GPIO_PinConfig gpioPinConfigs[48] = {
     GPIO_CFG_NO_DIR, /* DIO_11 */
     GPIO_CFG_NO_DIR, /* DIO_12 */
     GPIO_CFG_NO_DIR, /* DIO_13 */
-    /* Owned by CONFIG_BTN_RIGHT as Button GPIO */
-    GPIO_CFG_INPUT_INTERNAL | GPIO_CFG_IN_INT_NONE | GPIO_CFG_PULL_UP_INTERNAL, /* CONFIG_GPIO_BTN2 */
-    /* Owned by CONFIG_BTN_LEFT as Button GPIO */
-    GPIO_CFG_INPUT_INTERNAL | GPIO_CFG_IN_INT_NONE | GPIO_CFG_PULL_UP_INTERNAL, /* CONFIG_GPIO_BTN1 */
-    GPIO_CFG_NO_DIR, /* DIO_16 */
-    GPIO_CFG_NO_DIR, /* DIO_17 */
+    /* Owned by BTN_UP as Button GPIO */
+    GPIO_CFG_INPUT_INTERNAL | GPIO_CFG_IN_INT_NONE | GPIO_CFG_PULL_NONE_INTERNAL, /* CONFIG_GPIO_BTN_UP_INPUT */
+    /* Owned by BTN_DWN as Button GPIO */
+    GPIO_CFG_INPUT_INTERNAL | GPIO_CFG_IN_INT_NONE | GPIO_CFG_PULL_NONE_INTERNAL, /* CONFIG_GPIO_BTN_DWN_INPUT */
+    /* Owned by BTN_ENTR as Button GPIO */
+    GPIO_CFG_INPUT_INTERNAL | GPIO_CFG_IN_INT_NONE | GPIO_CFG_PULL_NONE_INTERNAL, /* CONFIG_GPIO_BTN_ENTR_INPUT */
+    /* Owned by BTN_EXIT as Button GPIO */
+    GPIO_CFG_INPUT_INTERNAL | GPIO_CFG_IN_INT_NONE | GPIO_CFG_PULL_NONE_INTERNAL, /* CONFIG_GPIO_BTN_EXIT_INPUT */
     GPIO_CFG_NO_DIR, /* DIO_18 */
     GPIO_CFG_NO_DIR, /* DIO_19 */
     GPIO_CFG_NO_DIR, /* DIO_20 */
@@ -204,8 +206,10 @@ const uint_least8_t CONFIG_GPIO_SPI_LCD_POCI_CONST = CONFIG_GPIO_SPI_LCD_POCI;
 const uint_least8_t CONFIG_GPIO_SPI_LCD_PICO_CONST = CONFIG_GPIO_SPI_LCD_PICO;
 const uint_least8_t CONFIG_GPIO_DISPLAY_UART_TX_CONST = CONFIG_GPIO_DISPLAY_UART_TX;
 const uint_least8_t CONFIG_GPIO_DISPLAY_UART_RX_CONST = CONFIG_GPIO_DISPLAY_UART_RX;
-const uint_least8_t CONFIG_GPIO_BTN1_CONST = CONFIG_GPIO_BTN1;
-const uint_least8_t CONFIG_GPIO_BTN2_CONST = CONFIG_GPIO_BTN2;
+const uint_least8_t CONFIG_GPIO_BTN_DWN_INPUT_CONST = CONFIG_GPIO_BTN_DWN_INPUT;
+const uint_least8_t CONFIG_GPIO_BTN_UP_INPUT_CONST = CONFIG_GPIO_BTN_UP_INPUT;
+const uint_least8_t CONFIG_GPIO_BTN_ENTR_INPUT_CONST = CONFIG_GPIO_BTN_ENTR_INPUT;
+const uint_least8_t CONFIG_GPIO_BTN_EXIT_INPUT_CONST = CONFIG_GPIO_BTN_EXIT_INPUT;
 const uint_least8_t CONFIG_GPIO_RLED_CONST = CONFIG_GPIO_RLED;
 const uint_least8_t CONFIG_GPIO_GLED_CONST = CONFIG_GPIO_GLED;
 
@@ -415,7 +419,7 @@ TimerCC26XX_Object timerCC26XXObjects[CONFIG_TIMER_COUNT];
  */
 const TimerCC26XX_HWAttrs timerCC26XXHWAttrs[CONFIG_TIMER_COUNT] = {
     {
-        .gpTimerUnit = btn_con_gp_timer,
+        .gpTimerUnit = CONFIG_TIMER_0_GP,
         .subTimer    = TimerCC26XX_timer32
 
     },
@@ -425,14 +429,14 @@ const TimerCC26XX_HWAttrs timerCC26XXHWAttrs[CONFIG_TIMER_COUNT] = {
  *  ======== Timer_config ========
  */
 const Timer_Config Timer_config[CONFIG_TIMER_COUNT] = {
-    /* btn_con_timer */
+    /* CONFIG_TIMER_0 */
     {
-        .object    = &timerCC26XXObjects[btn_con_timer],
-        .hwAttrs   = &timerCC26XXHWAttrs[btn_con_timer]
+        .object    = &timerCC26XXObjects[CONFIG_TIMER_0],
+        .hwAttrs   = &timerCC26XXHWAttrs[CONFIG_TIMER_0]
     },
 };
 
-const uint_least8_t btn_con_timer_CONST = btn_con_timer;
+const uint_least8_t CONFIG_TIMER_0_CONST = CONFIG_TIMER_0;
 const uint_least8_t Timer_count = CONFIG_TIMER_COUNT;
 
 /*
@@ -504,43 +508,67 @@ const uint_least8_t UART2_count = CONFIG_UART2_COUNT;
  */
 #include <ti/drivers/apps/Button.h>
 
-#define CONFIG_BUTTON_COUNT 2
+#define CONFIG_BUTTON_COUNT 4
 Button_Object ButtonObjects[CONFIG_BUTTON_COUNT];
 
 static const Button_HWAttrs ButtonHWAttrs[CONFIG_BUTTON_COUNT] = {
-    /* CONFIG_BTN_LEFT */
+    /* BTN_DWN */
     /* LaunchPad Button BTN-1 (Left) */
     {
-        .gpioIndex = CONFIG_GPIO_BTN1,
+        .gpioIndex = CONFIG_GPIO_BTN_DWN_INPUT,
         .pullMode = Button_PULL_UP,
         .internalPullEnabled = 1,
     },
-    /* CONFIG_BTN_RIGHT */
+    /* BTN_UP */
     /* LaunchPad Button BTN-2 (Right) */
     {
-        .gpioIndex = CONFIG_GPIO_BTN2,
+        .gpioIndex = CONFIG_GPIO_BTN_UP_INPUT,
+        .pullMode = Button_PULL_UP,
+        .internalPullEnabled = 1,
+    },
+    /* BTN_ENTR */
+    {
+        .gpioIndex = CONFIG_GPIO_BTN_ENTR_INPUT,
+        .pullMode = Button_PULL_UP,
+        .internalPullEnabled = 1,
+    },
+    /* BTN_EXIT */
+    {
+        .gpioIndex = CONFIG_GPIO_BTN_EXIT_INPUT,
         .pullMode = Button_PULL_UP,
         .internalPullEnabled = 1,
     },
 };
 
 const Button_Config Button_config[CONFIG_BUTTON_COUNT] = {
-    /* CONFIG_BTN_LEFT */
+    /* BTN_DWN */
     /* LaunchPad Button BTN-1 (Left) */
     {
-        .object = &ButtonObjects[CONFIG_BTN_LEFT],
-        .hwAttrs = &ButtonHWAttrs[CONFIG_BTN_LEFT]
+        .object = &ButtonObjects[BTN_DWN],
+        .hwAttrs = &ButtonHWAttrs[BTN_DWN]
     },
-    /* CONFIG_BTN_RIGHT */
+    /* BTN_UP */
     /* LaunchPad Button BTN-2 (Right) */
     {
-        .object = &ButtonObjects[CONFIG_BTN_RIGHT],
-        .hwAttrs = &ButtonHWAttrs[CONFIG_BTN_RIGHT]
+        .object = &ButtonObjects[BTN_UP],
+        .hwAttrs = &ButtonHWAttrs[BTN_UP]
+    },
+    /* BTN_ENTR */
+    {
+        .object = &ButtonObjects[BTN_ENTR],
+        .hwAttrs = &ButtonHWAttrs[BTN_ENTR]
+    },
+    /* BTN_EXIT */
+    {
+        .object = &ButtonObjects[BTN_EXIT],
+        .hwAttrs = &ButtonHWAttrs[BTN_EXIT]
     },
 };
 
-const uint_least8_t CONFIG_BTN_LEFT_CONST = CONFIG_BTN_LEFT;
-const uint_least8_t CONFIG_BTN_RIGHT_CONST = CONFIG_BTN_RIGHT;
+const uint_least8_t BTN_DWN_CONST = BTN_DWN;
+const uint_least8_t BTN_UP_CONST = BTN_UP;
+const uint_least8_t BTN_ENTR_CONST = BTN_ENTR;
+const uint_least8_t BTN_EXIT_CONST = BTN_EXIT;
 const uint_least8_t Button_count = CONFIG_BUTTON_COUNT;
 
 /*
@@ -605,7 +633,7 @@ GPTimerCC26XX_Object gptimerCC26XXObjects[CONFIG_GPTIMER_COUNT];
  *  ======== gptimerCC26XXHWAttrs ========
  */
 const GPTimerCC26XX_HWAttrs gptimerCC26XXHWAttrs[CONFIG_GPTIMER_COUNT] = {
-    /* btn_con_gp_timer, used by btn_con_timer */
+    /* CONFIG_TIMER_0_GP, used by CONFIG_TIMER_0 */
     {
         .baseAddr = GPT0_BASE,
         .intNum      = INT_GPT0A,
@@ -619,15 +647,15 @@ const GPTimerCC26XX_HWAttrs gptimerCC26XXHWAttrs[CONFIG_GPTIMER_COUNT] = {
  *  ======== GPTimer_config ========
  */
 const GPTimerCC26XX_Config GPTimerCC26XX_config[CONFIG_GPTIMER_COUNT] = {
-    /* btn_con_gp_timer */
+    /* CONFIG_TIMER_0_GP */
     {
-        .object    = &gptimerCC26XXObjects[btn_con_gp_timer],
-        .hwAttrs   = &gptimerCC26XXHWAttrs[btn_con_gp_timer],
+        .object    = &gptimerCC26XXObjects[CONFIG_TIMER_0_GP],
+        .hwAttrs   = &gptimerCC26XXHWAttrs[CONFIG_TIMER_0_GP],
         .timerPart = GPT_A
     },
 };
 
-const uint_least8_t btn_con_gp_timer_CONST = btn_con_gp_timer;
+const uint_least8_t CONFIG_TIMER_0_GP_CONST = CONFIG_TIMER_0_GP;
 const uint_least8_t GPTimer_count = CONFIG_GPTIMER_COUNT;
 
 #include <stdbool.h>

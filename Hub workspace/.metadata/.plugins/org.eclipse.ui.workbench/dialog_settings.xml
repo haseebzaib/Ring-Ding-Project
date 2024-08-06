@@ -4,4 +4,6 @@
 		<item key="com.ti.ccstudio.system.setup.ui.editors.connectionName" value="Texas Instruments XDS110 USB Debug Probe"/>
 		<item key="com.ti.ccstudio.system.setup.ui.editors.connectionType" value="TIXDS110"/>
 	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>

@@ -873,6 +873,12 @@ void Sensor_process(void)
 
         /* Clear the event */
         Util_clearEvent(&Sensor_events, SENSOR_DISASSOC_EVT);
+//
+//        /* Tell the sensor to start */
+//       Util_setEvent(&Sensor_events, SENSOR_START_EVT);
+//       /* Wake up the application thread when it waits for clock event */
+//       Ssf_PostAppSem();
+//       Util_setEvent(&Jdllc_events, JDLLC_ASSOCIATE_REQ_EVT);
     }
 
 #ifdef DMM_OAD
@@ -1537,7 +1543,12 @@ static void dataIndCB(ApiMac_mcpsDataInd_t *pDataInd)
 
                 break;
             }
+            case Smsgs_cmdIds_SensorNotiToWatch:
+            {
 
+
+                control_Task_Noti_Info_mail(pDataInd);
+            }
 
             default:
                 /* Should not receive other messages */
@@ -2418,7 +2429,15 @@ static void jdllcStateChangeCb(Jdllc_states_t state)
 
     if(state == Jdllc_states_initWaiting)
     {
+        Jdllc_sendDisassociationRequest();
+        /* Tell the sensor to start */
+       Util_setEvent(&Sensor_events, SENSOR_START_EVT);
+       /* Wake up the application thread when it waits for clock event */
+       Ssf_PostAppSem();
+
+       Util_setEvent(&Jdllc_events, JDLLC_ASSOCIATE_REQ_EVT);
         strcpy(network_info,"Waiting");
+        devInfoConfirmationFlag = 0;
     }
     else if(state == Jdllc_states_orphan)
     {
@@ -2428,6 +2447,7 @@ static void jdllcStateChangeCb(Jdllc_states_t state)
     else if(state == Jdllc_states_accessDenied)
     {
         strcpy(network_info,"Access Denied");
+        devInfoConfirmationFlag = 0;
     }
 
     if(Jdllc_getPrevProvState() == Jdllc_states_orphan)
@@ -2435,7 +2455,7 @@ static void jdllcStateChangeCb(Jdllc_states_t state)
         if(state == Jdllc_states_joined)
         {
             strcpy(network_info,"Joined");
-            control_task_mail_post_InfoToHub(1);
+            //control_task_mail_post_InfoToHub(1);
         }
         else if(state == Jdllc_states_rejoined)
         {

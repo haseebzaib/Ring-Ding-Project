@@ -24,8 +24,6 @@ application/collector/collector.o: ../application/collector/collector.c \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/runtime/Memory.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/runtime/Memory_defs.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Task_defs.h \
- C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/collector/advanced_config.h \
- C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/control_task.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/BIOS.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/runtime/Types.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/runtime/Types_defs.h \
@@ -33,11 +31,18 @@ application/collector/collector.o: ../application/collector/collector.c \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Event.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Event_defs.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Semaphore_defs.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox_defs.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/semaphore.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/sys/_internal.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/time.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/signal.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/sys/types.h \
+ C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/collector/advanced_config.h \
+ C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/control_task.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/Defines.h \
  syscfg/ti_drivers_config.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/DeviceFamily.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox_defs.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/console.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/embedded_cli.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/UART2.h \
@@ -149,10 +154,6 @@ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Task_defs.h:
 
-C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/collector/advanced_config.h:
-
-C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/control_task.h:
-
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/BIOS.h:
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/runtime/Types.h:
@@ -167,15 +168,29 @@ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Semaphore_defs.h:
 
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox_defs.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/semaphore.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/sys/_internal.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/time.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/signal.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/sys/types.h:
+
+C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/collector/advanced_config.h:
+
+C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/control_task.h:
+
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/Defines.h:
 
 syscfg/ti_drivers_config.h:
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/DeviceFamily.h:
-
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox.h:
-
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox_defs.h:
 
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/Hub\ workspace/collector_HUB/application/cli/console.h:
 

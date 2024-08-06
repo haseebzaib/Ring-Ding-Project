@@ -69,6 +69,43 @@ application/sensor/sensor.o: ../application/sensor/sensor.c \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Semaphore_defs.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox_defs.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Timer.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/HwiP.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Power.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/power/PowerCC26XX.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/power/PowerCC26X2.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Temperature.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/sys_ctrl.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_sysctl.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_prcm.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_aon_ioc.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ddi_0_osc.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_rfc_pwr.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_adi_3_refsys.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_aon_pmctl.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_aon_rtc.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_fcfg1.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/pwr_ctrl.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_adi_2_refsys.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/osc.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ccfg.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ddi.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/rom.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/ddi.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_aux_smph.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/prcm.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_memmap_common.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/aon_ioc.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/adi.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_uart.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_adi.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/vims.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_vims.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/semaphore.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/sys/_internal.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/time.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/signal.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/sys/types.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/control_task.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/clock/time_clock.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/hal/platform/comdef.h \
@@ -211,6 +248,80 @@ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox.h:
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Mailbox_defs.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Timer.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/HwiP.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Power.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/power/PowerCC26XX.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/power/PowerCC26X2.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Temperature.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/sys_ctrl.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_sysctl.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_prcm.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_aon_ioc.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ddi_0_osc.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_rfc_pwr.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_adi_3_refsys.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_aon_pmctl.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_aon_rtc.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_fcfg1.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/pwr_ctrl.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_adi_2_refsys.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/osc.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ccfg.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ddi.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/rom.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/ddi.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_aux_smph.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/prcm.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_memmap_common.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/aon_ioc.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/adi.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_uart.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_adi.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/vims.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_vims.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/semaphore.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/sys/_internal.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/time.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/signal.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/sys/types.h:
 
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/watch\ workspace/sensor_watch/application/control_task.h:
 

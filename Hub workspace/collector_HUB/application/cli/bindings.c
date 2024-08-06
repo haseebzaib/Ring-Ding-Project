@@ -325,12 +325,12 @@ void allPairedDevices(EmbeddedCli *cli, char *args, void *context)
         {
             cli_printf(cli, "_____________________________");
             cli_printf(cli, "Index: %d", i + 1);
-            cli_printf(cli, "Watch Addr: %d",
-                       control_task_devPairing[i].watch_shortAddr);
-            cli_printf(cli, "CallButton Addr: %d",
-                       control_task_devPairing[i].ding_shortAddr);
-            cli_printf(cli, "Manager Addr: %d",
-                       control_task_devPairing[i].Manager_shortAddr);
+            cli_printf(cli, "Watch Addr: 0x%x",
+                       control_task_devPairing[i].Watch_Devsignature);
+            cli_printf(cli, "CallButton signature: 0x%x",
+                       control_task_devPairing[i].Ding_Devsignature);
+            cli_printf(cli, "Manager Addr: 0x%x",
+                       control_task_devPairing[i].Manager_Devsignature);
             cli_printf(cli, "Watch ReferenceNumber: %d",
                        control_task_devPairing[i].Watch_ReferenceNumber);
             cli_printf(cli, "CallButton ReferenceNumber: %d",

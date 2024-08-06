@@ -51,20 +51,32 @@ application/control_task.o: ../application/control_task.c \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_adi.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/vims.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_vims.h \
+ C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/link_controller/jdllc.h \
+ C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/link_controller/llc.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/common/osal_port/api_mac.h \
+ syscfg/ti_154stack_features.h \
+ syscfg/ti_154stack_config.h \
  syscfg/ti_drivers_config.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/DeviceFamily.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/common/util/mac_util.h \
+ C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/ssf.h \
+ C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/smsgs.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/common/cui/cui.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/apps/Button.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/GPIO.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/gpio/GPIOCC26XX.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ioc.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/ClockP.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/apps/LED.h \
+ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/PWM.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ccfg.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ccfg_simple_struct.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Power.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/utils/List.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/power/PowerCC26XX.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/HwiP.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/ClockP.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/power/PowerCC26X2.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Temperature.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/GPIO.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/gpio/GPIOCC26XX.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ioc.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/aon_rtc.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/knl/Queue.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/kernel/tirtos7/packages/ti/sysbios/runtime/Error.h \
@@ -88,16 +100,8 @@ application/control_task.o: ../application/control_task.c \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Timer.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/SemaphoreP.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/Defines.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/common/osal_port/api_mac.h \
- syscfg/ti_154stack_features.h \
- syscfg/ti_154stack_config.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/sensor.h \
- C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/smsgs.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/control_task.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/common/cui/cui.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/apps/Button.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/apps/LED.h \
- C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/PWM.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/NeoPixel/NeoPixel.h \
  C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/NeoPixel/NeoPixelEffect.h \
  C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/posix/ticlang/unistd.h
@@ -202,9 +206,41 @@ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/dr
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_vims.h:
 
+C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/link_controller/jdllc.h:
+
+C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/link_controller/llc.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/common/osal_port/api_mac.h:
+
+syscfg/ti_154stack_features.h:
+
+syscfg/ti_154stack_config.h:
+
 syscfg/ti_drivers_config.h:
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/DeviceFamily.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/common/util/mac_util.h:
+
+C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/ssf.h:
+
+C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/smsgs.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/common/cui/cui.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/apps/Button.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/GPIO.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/gpio/GPIOCC26XX.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ioc.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/ClockP.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/apps/LED.h:
+
+C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/PWM.h:
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ccfg.h:
 
@@ -218,17 +254,9 @@ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/power/PowerCC26X
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/HwiP.h:
 
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/ClockP.h:
-
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/power/PowerCC26X2.h:
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/Temperature.h:
-
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/GPIO.h:
-
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/gpio/GPIOCC26XX.h:
-
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/inc/hw_ioc.h:
 
 C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/devices/cc13x4_cc26x4/driverlib/aon_rtc.h:
 
@@ -276,25 +304,9 @@ C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/dpl/SemaphoreP.h
 
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/Defines.h:
 
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/ti154stack/common/osal_port/api_mac.h:
-
-syscfg/ti_154stack_features.h:
-
-syscfg/ti_154stack_config.h:
-
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/sensor.h:
 
-C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/sensor/smsgs.h:
-
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/control_task.h:
-
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/common/cui/cui.h:
-
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/apps/Button.h:
-
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/apps/LED.h:
-
-C:/ti/simplelink_cc13xx_cc26xx_sdk_7_41_00_17/source/ti/drivers/PWM.h:
 
 C:/Users/hzaib/Documents/Freelance\ Projects/Mughees\ proj/Ring\ ding\ project/ding\ workspace/sensor_ding/application/NeoPixel/NeoPixel.h:
 

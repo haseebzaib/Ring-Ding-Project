@@ -15,6 +15,7 @@ const Display1     = Display.addInstance();
 const NVS          = scripting.addModule("/ti/drivers/NVS");
 const NVS1         = NVS.addInstance();
 const NVS2         = NVS.addInstance();
+const Power        = scripting.addModule("/ti/drivers/Power");
 const RF           = scripting.addModule("/ti/drivers/RF");
 const Button       = scripting.addModule("/ti/drivers/apps/Button");
 const Button1      = Button.addInstance();
@@ -66,6 +67,8 @@ NVS2.$name                    = "CONFIG_NVS_CUSTOM";
 NVS2.internalFlash.$name      = "ti_drivers_nvs_NVSCC26XX1";
 NVS2.internalFlash.regionSize = 0x8000;
 NVS2.internalFlash.regionBase = 0xE1000;
+
+Power.enablePolicy = false;
 
 Button1.$hardware     = system.deviceData.board.components["BTN-1"];
 Button1.$name         = "CONFIG_BTN_LEFT";
@@ -125,9 +128,9 @@ System.supportModule     = "SysCallback";
 
 ti154stack.lockProject                        = true;
 ti154stack.transmitPower                      = "5";
-ti154stack.reportingInterval                  = 10000;
 ti154stack.trackingDelayTime                  = 10000;
-ti154stack.pollingInterval                    = 800;
+ti154stack.reportingInterval                  = 15000;
+ti154stack.pollingInterval                    = 1100;
 ti154stack.radioConfig.codeExportConfig.$name = "ti_devices_radioconfig_code_export_param0";
 ti154stack.aesccmModule.$name                 = "CONFIG_AESCCM_0";
 ti154stack.ti154stackModule.$name             = "ti_ti154stack_ti154stack_config_mod0";

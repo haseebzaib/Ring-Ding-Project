@@ -296,13 +296,12 @@ const uint_least8_t NVS_count = CONFIG_NVS_COUNT;
 #include <ti/drivers/power/PowerCC26X2.h>
 #include "ti_drivers_config.h"
 
-extern void PowerCC26XX_standbyPolicy(void);
 extern bool PowerCC26XX_calibrate(unsigned int);
 
 const PowerCC26X2_Config PowerCC26X2_config = {
-    .enablePolicy             = true,
+    .enablePolicy             = false,
     .policyInitFxn            = NULL,
-    .policyFxn                = PowerCC26XX_standbyPolicy,
+    .policyFxn                = NULL,
     .calibrateFxn             = PowerCC26XX_calibrate,
     .calibrateRCOSC_LF        = true,
     .calibrateRCOSC_HF        = true,

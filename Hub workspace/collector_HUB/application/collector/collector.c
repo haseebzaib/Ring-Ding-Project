@@ -58,6 +58,12 @@
 #include "collector.h"
 #include "ti_154stack_config.h"
 
+#include <ti/sysbios/BIOS.h>
+#include <ti/sysbios/knl/Queue.h>
+#include <ti/sysbios/knl/Semaphore.h>
+#include <ti/sysbios/knl/Task.h>
+#include <ti/sysbios/knl/Mailbox.h>
+#include <semaphore.h>
 #ifndef CUI_DISABLE
 #include "cui.h"
 #endif /* CUI_DISABLE */
@@ -93,6 +99,8 @@
 /******************************************************************************
  Constants and definitions
  *****************************************************************************/
+
+
 
 #if !defined(STATIC)
 /* make local */
@@ -235,6 +243,7 @@ static uint32_t startTrackMsgTimeStamp = 0;
  Global variables
  *****************************************************************************/
 
+sem_t MycollectorSem;
 /* Task pending events */
 uint16_t Collector_events = 0;
 
@@ -600,6 +609,11 @@ void Collector_init(void)
     // register the app callbacks
     DMMPolicy_registerAppCbs(dmmPolicyAppCBs, DMMPolicy_StackRole_154Collector);
 #endif
+
+
+    sem_init(&MycollectorSem, 0, 0);
+
+    sem_post(&MycollectorSem);
 }
 
 /*!
@@ -731,14 +745,14 @@ void Collector_process(void)
     {
 
 
+        uint8_t buffer[1];
+            /* Build the message */
+            buffer[0] = (uint8_t)Smsgs_cmdIds_SensorSendDeviceInfoConfirmation;
 
-                        uint8_t buffer[1];
-                           /* Build the message */
-                           buffer[0] = (uint8_t)Smsgs_cmdIds_SensorSendDeviceInfoConfirmation;
+         sendMsg(Smsgs_cmdIds_SensorSendDeviceInfoConfirmation,
+                 joinedDev_mail.shortAddr,
+                 false, 1, buffer);
 
-                        sendMsg(Smsgs_cmdIds_SensorSendDeviceInfoConfirmation,
-                                joinedDev_mail.shortAddr,
-                                false, 1, buffer);
 
     Util_clearEvent(&Collector_events, COLLECTOR_SENSORS_SEND_Device_Info);
     }
@@ -2280,6 +2294,8 @@ uint8_t txTestPower2 = 5;
                     uint16_t len,
                     uint8_t *pData)
 {
+
+//    / sem_wait(&MycollectorSem);
     static uint8_t map_index = 0;
     ApiMac_mcpsDataReq_t dataReq;
 
@@ -2367,6 +2383,8 @@ uint8_t txTestPower2 = 5;
        map_index ++;
        return (true);
     }
+
+    //sem_post(&MycollectorSem);
 }
 
 /*!
