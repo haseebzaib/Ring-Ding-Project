@@ -48,6 +48,8 @@
 #include "time_clock.h"
 #include "utc_clock.h"
 #include <semaphore.h>
+#include "jdllc.h"
+#include "mac_util.h"
 
 sem_t display_handle;
 
@@ -63,6 +65,14 @@ static const char selection_menu_str[2][20] =
 {
  "1)Notification",
  "2)Settings",
+
+};
+
+static const char setting_menu_str[2][25] =
+{
+ "1)Associate",
+ "2)Dissociate",
+
 
 };
 
@@ -140,6 +150,7 @@ uint16_t Menu_index = 0;
 
  /*Static function declaration*/
  static void top_display();
+ static void settings_display();
  static void noti_display();
  static void selection_menu();
  static void main_menu();
@@ -158,6 +169,80 @@ uint16_t Menu_index = 0;
      }
      LCD_PutStr(0, 10, buf, FONT_16X26, C_BLACK, C_WHITE);
      UG_DrawBMP(200, 10, &battery_full);
+ }
+
+ static void settings_display()
+ {
+
+     uint8_t total_selection = 2;
+     int8_t selection = 0;
+     do
+      {
+          Button_.BT_code = cNONE_;
+          do {
+
+              ST7789_clearbuffer();
+               UG_FillScreen(C_WHITE);
+               top_display();
+
+               for (int i = 0; i < 2; i++)
+               {
+                 LCD_PutStr(0, 50 + ((i)*30),(char *) setting_menu_str[i], FONT_16X26,selection == i ? C_RED : C_BLACK, C_WHITE);
+               }
+               UG_Update();
+
+               Mysem_waitTimed(&display_handle,CLOCK_MS(1000));
+
+          }while(Button_.BT_code == cNONE_);
+
+          switch(Button_.BT_code)
+          {
+
+          case cUP:
+          {
+
+                  selection = selection  - 1;
+                  if(selection < 0)
+                  {
+                      selection = total_selection-1;
+                  }
+
+                  break;
+          }
+
+          case cDWN:
+          {
+              selection = selection  + 1;
+              selection = selection%total_selection;
+
+              break;
+          }
+          case cENTR:
+          {
+
+              if(selection)
+              {
+                  Jdllc_sendDisassociationRequest();
+              }
+              else
+              {
+                  /* Tell the sensor to start */
+                    Util_setEvent(&Sensor_events, SENSOR_START_EVT);
+              }
+
+
+              break;
+          }
+          default:
+                  break;
+
+          }
+
+
+      } while(!(Button_.BT_code == cEXIT));
+
+
+
  }
 
 
@@ -210,24 +295,11 @@ uint16_t Menu_index = 0;
          {
              uint8_t break_or_not = 1;
 
-//             if(recved_notifications[selected_index].structValid == 0xBEEF)
-//             {
-//                 recved_notifications[selected_index].structValid = 0xFFFF; //make this noti invalid as user has read it now
-//                 if(selected_index == 0)
-//                 {
-//                     selected_index++;
-//                 }
-//                 else
-//                 {
-//                     selected_index--;
-//                 }
-//             }
-
 
              if(recved_notifications[selection + index_adder].structValid == 0xBEEF)
              {
 
-                 recved_notifications[selection + index_adder].structValid = 0xFFFF;
+                 recved_notifications[selection + index_adder].structValid = 0xFFFF; //we invalid the current val as it is read
                  /*Check if next is even available or not then we set the noti_count according to that*/
                  /*if next is not available and we go in this struct that can cause the issue*/
                 if(recved_notifications[(selection+1) + index_adder].structValid == 0xBEEF)
@@ -344,6 +416,7 @@ uint16_t Menu_index = 0;
      uint8_t total_selection = 2;
      int8_t selection = 0;
      entr_marker = 0;
+     menu_marker = 1;
      do
      {
          Button_.BT_code = cNONE_;
@@ -420,16 +493,10 @@ static void main_menu()
             sprintf(display_buffer,"%02d/%02d/%02d    ", tm.day, tm.month, tm.year);
             LCD_PutStr(50, 80, display_buffer, FONT_16X26, C_BLACK, C_WHITE);
 
-//            /*Notification*/
-//            LCD_PutStr(55, 130, "*Latest*", FONT_16X26, C_BLACK, C_WHITE);
-//            LCD_PutStr(20, 170, "Notification", FONT_16X26, C_BLACK, C_WHITE);
-
             //network_info
             LCD_PutStr(55, 130, "*Network*", FONT_16X26, C_BLACK, C_WHITE);
             LCD_PutStr(55, 165, network_info, FONT_16X26, C_BLACK, C_WHITE);
             UG_Update();
-
-//            Task_sleep(CLOCK_MS(800));
 
 
 
@@ -452,6 +519,7 @@ static void main_menu()
           {main_menu_,main_menu,{selection_},main_menu_,0,0,0,0},
           {selection_,selection_menu,{notif_center_,settings_},main_menu_,0,0,0,0},
           {notif_center_,noti_display,{main_menu_},main_menu_,0,0,0,0},
+          {settings_,settings_display,{main_menu_},main_menu_,0,0,0,0},
 
          };
 
@@ -484,6 +552,7 @@ static void main_menu()
                  else
                  {
                      iNeuMenue = mkaMenue[Menu_index].Enter[entr_marker];
+                     menu_marker = 0;
                  }
                  break;
              }

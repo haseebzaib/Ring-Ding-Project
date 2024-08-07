@@ -76,7 +76,7 @@ enum
     main_menu_ = 1,
     selection_ = 2,
     notif_center_ = 3,
-    settings_=4
+    settings_= 4,
 
 }menu_number;
 

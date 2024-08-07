@@ -2307,6 +2307,7 @@ static void jdllcDisassocIndCb(ApiMac_sAddrExt_t *pExtAddress,
 #endif //FEATURE_NATIVE_OAD
 
     devInfoConfirmationFlag = 0;
+    control_Task_dev_info.dev_shortAddr = 0xFFFF;
 }
 
 /*!

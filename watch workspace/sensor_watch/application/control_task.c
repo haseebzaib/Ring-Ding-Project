@@ -133,17 +133,6 @@ Task_Params controlTaskParam;
                    memcpy(&recved_notifications[noti_count],&Noti_mail,sizeof(control_task_Recvnotification_info));
                    noti_count++;
 
-//                   for (int j = 0; j < total_noti; j++)
-//                    {
-//                       /*This tell us that the stuff stored in struct is valid*/
-//                        if(recved_notifications[j].structValid != 0xBEEF)
-//                         {
-//                            memcpy(&recved_notifications[j],&Noti_mail,sizeof(control_task_Recvnotification_info));
-//                            noti_count = j+1;
-//                            break;
-//                         }
-//
-//                    }
 
                    sem_post(&display_handle);
                }
