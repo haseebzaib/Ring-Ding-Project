@@ -184,7 +184,7 @@ uint16_t DMA_MIN_SIZE = 1;//16;
 
 #endif
 #define HOR_LEN     240  //  Also mind the resolution of your screen!
-uint16_t disp_buf[ST7789_WIDTH * HOR_LEN];
+uint16_t disp_buf[(ST7789_WIDTH * HOR_LEN)/8];
 
 SPI_Handle controllerSpi;
 SPI_Params spiParams;
@@ -196,7 +196,7 @@ static UG_GUI gui;
 static UG_DEVICE device = {
     .x_dim = ST7789_WIDTH,
     .y_dim = ST7789_HEIGHT,
-    .pset = ST7789_DrawPixelFB,//ST7789_DrawPixel,
+    .pset =  ST7789_DrawPixelFB,//ST7789_DrawPixel,
     .flush = ST7789_Update,
 };
 
@@ -252,9 +252,14 @@ static void setSPI_Size(int8_t size){
 void ST7789_Update(void)
 {
 
-    ST7789_SetAddressWindow(0,0,ST7789_WIDTH-1,ST7789_HEIGHT-1);
-    ConvHL((uint8_t*)disp_buf, sizeof(uint16_t)*ST7789_WIDTH*ST7789_HEIGHT);
-    ST7789_WriteData((uint8_t*)disp_buf, sizeof(uint16_t)*ST7789_WIDTH*ST7789_HEIGHT);
+//    ST7789_SetAddressWindow(0,0,ST7789_WIDTH-1,ST7789_HEIGHT-1);
+//    ConvHL((uint8_t*)disp_buf, sizeof(uint16_t)*ST7789_WIDTH*ST7789_HEIGHT);
+//    ST7789_WriteData((uint8_t*)disp_buf, sizeof(uint16_t)*ST7789_WIDTH*ST7789_HEIGHT);
+
+
+    ST7789_SetAddressWindow(0,0,ST7789_WIDTH-1/8,ST7789_HEIGHT-1);
+    ConvHL((uint8_t*)disp_buf, sizeof(uint16_t)*(ST7789_WIDTH*ST7789_HEIGHT/8));
+    ST7789_WriteData((uint8_t*)disp_buf, sizeof(uint16_t)*(ST7789_WIDTH*ST7789_HEIGHT/8));
 
 }
 
@@ -263,7 +268,10 @@ void ST7789_DrawPixelFB(int16_t x, int16_t y, uint16_t color)
   if ((x < 0) || (x >= ST7789_WIDTH) ||
      (y < 0) || (y >= ST7789_HEIGHT)) return;
 
-  disp_buf[x+(y*ST7789_WIDTH)] = color;
+ // disp_buf[(x+(y*ST7789_WIDTH))/8] = color;
+
+
+  disp_buf[(y*ST7789_HEIGHT) + x/8] = color;
 }
 
 static void ST7789_WriteCommand(uint8_t cmd)
@@ -1031,7 +1039,9 @@ void LCD_PutStr(uint16_t x, uint16_t y,  char *str, UG_FONT* font, uint16_t colo
 
 void ST7789_clearbuffer()
 {
-    memset(disp_buf,0,ST7789_WIDTH*ST7789_HEIGHT);
+    memset(disp_buf,0,ST7789_WIDTH*ST7789_HEIGHT/8);
+
+
 }
 
 void ST779_Init(uint_least8_t spi_index)
@@ -1135,128 +1145,3 @@ void ST779_Init(uint_least8_t spi_index)
 
 }
 
-//INTERNAL FUNCTION OF LIBRARY
-/*Sends block colour information to LCD*/
-void ILI9341_Draw_Colour_Burst(uint16_t Colour, uint32_t Size)
-{
-//SENDS COLOUR
-uint32_t Buffer_Size = 0;
-if((Size*2) < 500)
-{
-    Buffer_Size = Size;
-}
-else
-{
-    Buffer_Size = 500;
-}
-
-GPIO_write(CONFIG_GPIO_DC,1);
-
-
-unsigned char chifted =     Colour>>8;;
-unsigned char burst_buffer[Buffer_Size];
-for(uint32_t j = 0; j < Buffer_Size; j+=2)
-    {
-        burst_buffer[j] =   chifted;
-        burst_buffer[j+1] = Colour;
-    }
-
-uint32_t Sending_Size = Size*2;
-uint32_t Sending_in_Block = Sending_Size/Buffer_Size;
-uint32_t Remainder_from_block = Sending_Size%Buffer_Size;
-
-if(Sending_in_Block != 0)
-{
-
-
-        transaction.count = Buffer_Size;
-        transaction.txBuf = (void *)burst_buffer;
-
-            SPI_transfer(controllerSpi, &transaction);
-#ifdef USE_DMA
-            sem_wait(&peripheralSem);
-#endif
-
-}
-
-//REMAINDER!
-
-
-
-transaction.count = Remainder_from_block;
-transaction.txBuf = (void *)burst_buffer;
-
-    SPI_transfer(controllerSpi, &transaction);
-#ifdef USE_DMA
-    sem_wait(&peripheralSem);
-#endif
-
-
-}
-
-
-void ILI9341_Draw_Rectangle(uint16_t X, uint16_t Y, uint16_t Width, uint16_t Height, uint16_t Colour)
-{
-if((X >=240) || (Y >=240)) return;
-if((X+Width-1)>=240)
-    {
-        Width=240-X;
-    }
-if((Y+Height-1)>=240)
-    {
-        Height=240-Y;
-    }
-ST7789_SetAddressWindow(X, Y, X+Width-1, Y+Height-1);
-ILI9341_Draw_Colour_Burst(Colour, Height*Width);
-
-}
-
-
-/*Draws a character (fonts imported from fonts.h) at X,Y location with specified font colour, size and Background colour*/
-/*See fonts.h implementation of font on what is required for changing to a different font when switching fonts libraries*/
-void ILI9341_Draw_Char(char Character, uint16_t X, uint16_t Y, uint16_t Colour, uint16_t Size, uint16_t Background_Colour)
-{
-        uint8_t     function_char;
-    uint8_t     i,j;
-
-        function_char = Character;
-
-    if (function_char < ' ') {
-        Character = 0;
-    } else {
-        function_char -= 32;
-        }
-
-        char temp[CHAR_WIDTH];
-        for(uint8_t k = 0; k<CHAR_WIDTH; k++)
-        {
-        temp[k] = font[function_char][k];
-        }
-
-    // Draw pixels
-        ILI9341_Draw_Rectangle(X, Y, CHAR_WIDTH*Size, CHAR_HEIGHT*Size, Background_Colour);
-    for (j=0; j<CHAR_WIDTH; j++) {
-        for (i=0; i<CHAR_HEIGHT; i++) {
-            if (temp[j] & (1<<i)) {
-                            if(Size == 1)
-                            {
-                                ST7789_DrawPixel(X+j, Y+i, Colour);
-                            }
-                            else
-                            {
-                                ILI9341_Draw_Rectangle(X+(j*Size), Y+(i*Size), Size, Size, Colour);
-                            }
-            }
-        }
-    }
-}
-
-/*Draws an array of characters (fonts imported from fonts.h) at X,Y location with specified font colour, size and Background colour*/
-/*See fonts.h implementation of font on what is required for changing to a different font when switching fonts libraries*/
-void ILI9341_Draw_Text(const char* Text, uint16_t X, uint16_t Y, uint16_t Colour, uint16_t Size, uint16_t Background_Colour)
-{
-    while (*Text) {
-        ILI9341_Draw_Char(*Text++, X, Y, Colour, Size, Background_Colour);
-        X += CHAR_WIDTH*Size;
-    }
-}

@@ -57,6 +57,7 @@ CCFG.enableBootloader         = true;
 CCFG.enableBootloaderBackdoor = true;
 CCFG.dioBootloaderBackdoor    = 15;
 CCFG.levelBootloaderBackdoor  = "Active low";
+CCFG.addressFlashVectorTable  = 0x00008000;
 CCFG.ccfgTemplate.$name       = "ti_devices_CCFG_CCFGCC26XXTemplate0";
 
 rfdesign.rfDesign = "LP_EM_CC1314R10";
@@ -83,8 +84,8 @@ SPI1.$hardware            = system.deviceData.board.components.LP_SPI_BUS;
 SPI1.minDmaTransferSize   = 1;
 SPI1.defaultTxBufferValue = "0";
 
-Timer1.timerType           = "32 Bits";
 Timer1.$name               = "CONFIG_TIMER_0";
+Timer1.timerType           = "32 Bits";
 Timer1.timerInstance.$name = "CONFIG_TIMER_0_GP";
 
 Button1.$hardware = system.deviceData.board.components["BTN-1"];
